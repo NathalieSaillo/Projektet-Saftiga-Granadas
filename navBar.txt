@@ -1,0 +1,45 @@
+
+
+function buildNavBar()
+
+  create div navBarHTML
+
+  array buttons
+     - path-to-image: home_image 82homeButton_"), url: home_url
+     - path-to-image: search_image, url: search_url
+     - path-to-image: contact_image, url: contact_url
+     - path-to-image: faq_image, url: url: faq:url
+
+  loop through array buttons  
+     append buildButton(path_to_image, url) to navBarHTML
+
+  return navBarHTML
+
+
+
+
+
+
+
+
+function buildButton (path_to_image, url)
+
+  set currentButton to true or false with function isThisTheCurrentPage(url)  
+  ** find out if this is the page for this button and set currentButton (false or true)
+  const currentButton = false;
+
+    create button
+    if ()
+      set image to button - with path_to_image + "green.png"
+    else
+      set image to button - with path_to_image + "withe.png"
+    
+    set location url - with url
+    return button
+
+
+function isThisTheCurrenttPage(url)
+    how the hell do we solve this? ask kim or petter
+    return true / false
+
+
