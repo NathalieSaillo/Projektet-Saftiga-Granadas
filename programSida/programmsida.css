@@ -76,3 +76,17 @@ flex-direction: column;
     width: 30vw;
 height: 30vh;
 }
+
+.comment-div p:nth-child(3n+2){
+    background-color:rgba(74, 188, 193, 20%)
+}
+
+.bredd-annons-program{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 10vh;
+    margin: 5px 5px 5px 5px;
+    background-color: darkgrey;
+}
