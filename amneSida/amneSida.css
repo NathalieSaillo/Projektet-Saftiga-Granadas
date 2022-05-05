@@ -9,6 +9,18 @@ body {
     width: 100vw;
 }
 
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amneRubrik {
+    font-family: 'PT sans', sans-serif;
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
 #val-boxar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
