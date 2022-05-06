@@ -1,10 +1,13 @@
 body{
     font-family: 'PT Sans', sans-serif;
+    margin: 5px;
+    overflow-x: scroll;
+    height: 100px;
 }
 #header{
     background-color: gray;
     margin: 0px;
-    height: 70vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -32,7 +35,6 @@ body{
     font-weight: 900;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 #content{
@@ -44,6 +46,34 @@ body{
 }
 
 
+#container-boximages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    width: 80vw;
+    position: absolute;
+    top: 90vh;
+    margin-bottom: 20px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    gap: 5px;
+    
+}
+
+.box-image{ 
+    height: 25vw;
+    width: 40vw; 
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    
+
+    
+
+    
+}
 
 
 
