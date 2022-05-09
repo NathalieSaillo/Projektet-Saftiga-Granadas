@@ -76,3 +76,13 @@ flex-direction: column;
     width: 30vw;
 height: 30vh;
 }
+
+.kvadrat-annons-program{
+    display: flex;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 30vh;
+        background-color: darkgrey;
+    }
