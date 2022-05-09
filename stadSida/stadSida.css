@@ -1,5 +1,8 @@
 body{
     font-family: 'PT Sans', sans-serif;
+    width: 100vw;
+
+   
 }
 #header{
     background-color: gray;
@@ -20,7 +23,7 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 2,5vh;
+    font-size: 2.5vh;
     font-weight: 900;
 }
 
@@ -43,7 +46,47 @@ body{
     font-weight: 900;
 }
 
+#info-wrapper{
+    height: 300px;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    gap: 5vw;
+    display: flex;
+    justify-content: center;
+}
 
+.info-city{
+    height: 400px;
+    background-color: whitesmoke;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
 
+.review-city{
+    height: 400px;
+    background-color: whitesmoke;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
 
+#text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+}
+p{
+    margin-top: 10px;
+    margin-left: 3vw;
+    color: turquoise;
+    font-size: 2vw;  
+    font-weight: 1000;
+ 
+}
 
+.ta-chansen{
+    margin-left: 13vw;
+
+}
