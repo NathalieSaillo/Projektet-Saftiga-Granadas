@@ -1,5 +1,6 @@
 body{
     font-family: 'PT Sans', sans-serif;
+    overflow: scroll;
 }
 #header{
     background-color: gray;
@@ -45,5 +46,16 @@ body{
 
 
 
+
+#annons-ett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 20vh;
+    width: 97vw;
+    margin: auto;
+    margin-top: 10px;
+}
 
 
