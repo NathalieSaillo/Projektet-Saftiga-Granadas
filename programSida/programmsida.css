@@ -86,3 +86,13 @@ height: 30vh;
         height: 30vh;
         background-color: darkgrey;
     }
+
+    .bredd-annons-program{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 98vw;
+        height: 10vh;
+        margin: 5px 5px 5px 5px;
+        background-color: darkgrey;
+    }
