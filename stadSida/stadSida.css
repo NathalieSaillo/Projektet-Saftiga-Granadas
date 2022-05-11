@@ -1,9 +1,32 @@
 body{
     font-family: 'PT Sans', sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 
    
 }
+menu{
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    /* background-color: rgba ( 198, 198, 198, 0.5); */
+}
+
+.menu{
+    
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+
+}
+
+.menu:hover{
+    color: white;
+}
+
 #header{
     background-color: gray;
     margin: 0px;
@@ -89,4 +112,24 @@ p{
 .ta-chansen{
     margin-left: 13vw;
 
+}
+
+
+footer{
+    margin-top: 10vh;
+    background-color: rgb(69, 39, 12);
+    height: 12vh;
+    padding-top: 1vh;
+}
+
+.footer{
+    color: white;
+    text-align: right;
+    padding-right: 10vw;
+    font-size: large;
+    
+}
+
+.footer:hover{
+    color: rgba(32, 186, 197, 0.4);;
 }
