@@ -193,6 +193,30 @@ p{
 }
 
 
+#image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    width: 90vw;
+    margin-left: 10vh;
+    margin-bottom: 1;
+    /* margin-right: 5px; */
+
+} 
+
+.box-image{ 
+    height: 20vw;
+    width: 25vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    margin: 5px;
+  
+} 
+
+
 footer{
     margin-top: 10vh;
     background-color: rgb(69, 39, 12);
