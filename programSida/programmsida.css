@@ -66,13 +66,16 @@ flex-direction: column;
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+    margin: 0px 5vh 0px 5vh;
 
     justify-items: center;
     align-items: center;
 }
 
 .comment-div p{
-    background-color: rgba(74, 188, 193, 20%);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(74, 188, 193, 100%);
     width: 30vw;
 height: 30vh;
 }
@@ -95,4 +98,17 @@ height: 30vh;
         height: 10vh;
         margin: 5px 5px 5px 5px;
         background-color: darkgrey;
+    }
+
+    .comment-div p:hover{
+        background-color:rgba(80, 200, 200, 100%);
+        transition: 0.5s;
+    }
+    
+    .comment-div p:hover:nth-child(3n+2){
+        background-color:rgba(80, 195, 200, 30%)
+    }
+
+    .comment-div p:nth-child(3n+2){
+        background-color:rgba(74, 188, 193, 20%)
     }
