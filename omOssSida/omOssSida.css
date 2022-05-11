@@ -1,5 +1,68 @@
-:root {
-    --main-color:rgb(74, 188, 193); 
-    --secondary-color:rgb(69, 39, 12);
-    --background-color: rgb(255, 253, 249);
+*{
+    margin: 0;
+}
+.container-pictures{
+    display: grid;
+    gap: 30px;
+    margin: 20px;
+    grid-template-columns: repeat(1, 20vw 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.om-oss-header{
+display: flex;
+justify-content: center;
+font-size: 8vh;
+}
+
+.om-oss-general{
+    background-color: rgb(201, 234, 234);
+}
+.om-oss-kvadrat-annons {
+    display: flex;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+    height: 20vh;
+    background-color: darkgrey;
+}
+.om-oss-picture-1{
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.om-oss-picture-2 {
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.om-oss-picture-3 {
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.om-oss-picture-4 {
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.om-oss-info-1, .om-oss-info-2, .om-oss-info-3, .om-oss-info-4 {
+    background-color: rgb(201, 234, 234);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
