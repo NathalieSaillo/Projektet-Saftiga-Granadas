@@ -7,6 +7,8 @@
 
 .picture-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 50vh;
     width: 100%;
     background-image: url(/images/program-sida-design.jpg);
@@ -15,7 +17,7 @@
     position: relative;
 }
 
-.container{ 
+.container-program{ 
 width: 90%;
 color: whitesmoke;
 display: flex;
@@ -40,6 +42,7 @@ flex-direction: column;
 }
 .text-div {
     min-width: 30vw;
+    max-width: 30vw;
     min-height: 9vh;
     font-size: large;
 
@@ -47,8 +50,8 @@ flex-direction: column;
     align-items: center;
     display: grid;
 
-    grid-template-columns: 150px 150px ;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 20%);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
@@ -56,7 +59,7 @@ flex-direction: column;
 }
 
 .text-div p{
-    color: rgb(20, 124, 129);
+    color: rgb(25, 130, 135);
 }
 
 .comment-div{
@@ -72,6 +75,14 @@ flex-direction: column;
     align-items: center;
 }
 
+.comment-div p:hover{
+    background-color:rgba(80, 200, 200, 100%);
+    transition: 0.5s;
+}
+
+.comment-div p:hover:nth-child(3n+2){
+    background-color:rgba(80, 195, 200, 30%)
+}
 .comment-div p{
     display: flex;
     justify-content: center;
@@ -80,35 +91,60 @@ flex-direction: column;
 height: 30vh;
 }
 
+.comment-div p:nth-child(3n+2){
+    background-color:rgba(74, 188, 193, 20%)
+}
+
+.bredd-annons-program{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 10vh;
+    margin: 5px 5px 5px 5px;
+    background-color: darkgrey;
+}
+
 .kvadrat-annons-program{
+display: flex;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 30vh;
+    background-color: darkgrey;
+}
+
+.headline{
     display: flex;
+color: rgb(69, 39, 12);
+padding: 2vh 0vh 5vh 5vh;
+}
+¨
+.headline div:hover{
+color: rgb(18, 122, 214);
+}
+
+.headline div {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30vw;
-        height: 30vh;
-        background-color: darkgrey;
-    }
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0vh 0.5vh 0vh 0.5vh;
+    margin-left: 4vh;
+    border: 3px solid rgb(245, 239, 239);
+}
 
-    .bredd-annons-program{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 98vw;
-        height: 10vh;
-        margin: 5px 5px 5px 5px;
-        background-color: darkgrey;
-    }
-
-    .comment-div p:hover{
-        background-color:rgba(80, 200, 200, 100%);
-        transition: 0.5s;
-    }
-    
-    .comment-div p:hover:nth-child(3n+2){
-        background-color:rgba(80, 195, 200, 30%)
-    }
-
-    .comment-div p:nth-child(3n+2){
-        background-color:rgba(74, 188, 193, 20%)
-    }
+.chevrone {
+    border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(135deg);
+	vertical-align: top;
+	width: 0.45em;
+}
