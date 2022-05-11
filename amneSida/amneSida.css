@@ -45,6 +45,13 @@ body {
     margin: 20px;
 }
 
+#val-boxar:nth-child(5) {
+    color: dimgray;
+    background-color: gray;
+    border-color: dimgray;
+    z-index: 10;
+}
+
 .amne-box {
     border: solid var(--secondary-color) 2px;
     height: 24vh;
