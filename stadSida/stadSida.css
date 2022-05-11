@@ -85,7 +85,8 @@ menu{
    color: rgb(34, 221, 221);
     font-family: 'PT Sans', sans-serif;
     margin-left: 10vw;
-    margin: 4vw 10vw 2vw;
+    /* margin: 4vw 10vw 2vw; */
+    margin-top: 10vw;
 }
 
 #subject-header{
