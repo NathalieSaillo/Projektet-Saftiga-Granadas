@@ -122,6 +122,28 @@ menu{
     border: 1px rgba(32, 186, 197, 0.4) solid;  
 }
 
+#open-subject{
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    height: 50vh;
+    width: 80vw;
+    border: black solid 1px;
+    overflow: scroll;
+    margin-bottom: 5vh;
+
+}
+
+.line{
+    background-color: rgba(211, 211, 211, 0.792);
+    height: 35px;
+}
+
+.line:nth-child(even){
+    background-color: rgb(255, 253, 249);
+}
+
+
 
 
 #info-wrapper{
