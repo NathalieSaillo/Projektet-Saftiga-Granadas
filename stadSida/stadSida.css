@@ -80,6 +80,49 @@ menu{
     margin-top: 10px;
 }
 
+#subjects-header{
+    font-size:xx-large;
+   color: rgb(34, 221, 221);
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 10vw;
+    margin: 4vw 10vw 2vw;
+}
+
+#subject-header{
+    height: 5vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 1vw;
+}
+
+.subject{
+    height: 5vh;
+    width: 12vw;
+    border: black solid 1px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: large;
+   padding: 15px 0 0px;
+   
+}
+
+.subject:hover{
+    background-color: rgb(69, 39, 12);
+    color: white;
+    cursor: pointer;
+}
+
+.subject:active{
+    background-color: rgba(32, 186, 197, 0.4);
+    color: black;    
+    border: 1px rgba(32, 186, 197, 0.4) solid;  
+}
+
+
 
 #info-wrapper{
     height: 300px;
