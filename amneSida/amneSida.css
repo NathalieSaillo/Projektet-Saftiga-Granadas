@@ -5,9 +5,12 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
     background-color: var(--background-color);
-    margin: 0px;
-    padding: 0px;
+    font-family: 'PT sans', sans-serif;
 }
 
 #container {
@@ -16,39 +19,30 @@ body {
 }
 
 #titles {
-    font-family: 'PT Sans', sans-serif;
     text-align: center;
     color: var(--secondary-color);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-h1 {
+#val-amne-rub {
     font-weight: 900;
     font-size: 4.2vh;
 }
 
-h3 {
+#val-amne-urub {
     font-size: 2.5vh;
 }
 
-#wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#amneRubrik {
-    font-family: 'PT sans', sans-serif;
-    text-decoration: underline;
-    color: var(--main-color);
-}
-
 #val-boxar {
+    height: auto;
+    width: auto;
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    margin-left: 10px;
+    gap: 20px;
+
+    margin: 20px;
 }
 
 .amne-box {
