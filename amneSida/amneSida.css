@@ -91,3 +91,22 @@ menu{
     text-shadow: 2px 2px 4px var(--main-color);
     background-color: rgba(69, 39, 12, 30%);
 }
+
+footer{
+    margin-top: 10vh;
+    background-color: rgb(69, 39, 12);
+    height: 12vh;
+    padding-top: 1vh;
+}
+
+.footer{
+    color: white;
+    text-align: right;
+    padding-right: 10vw;
+    font-size: large;
+    
+}
+
+.footer:hover{
+    color: rgba(32, 186, 197, 0.4);;
+}
