@@ -31,6 +31,17 @@ menu{
     height: 100vh;
 }
 
+#annons-ett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 20vh;
+    width: 97vw;
+    margin: auto;
+    margin-top: 10px;
+}
+
 #titles {
     text-align: center;
     color: var(--secondary-color);
