@@ -22,15 +22,26 @@ menu{
     /* background-color: rgba ( 198, 198, 198, 0.5); */
 }
 
+.menu{
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
 .menu:hover{
     color: white;
+}
+
+#container {
+    margin: 30px;
 }
 
 #annons-ett{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: gray;
     height: 20vh;
     width: 97vw;
     margin: auto;
@@ -120,7 +131,7 @@ menu{
 }
 
 .open-text:nth-child(2n) {
-    background-color: gray;
+    background-color: gainsboro;
     height: auto;
 }
 
