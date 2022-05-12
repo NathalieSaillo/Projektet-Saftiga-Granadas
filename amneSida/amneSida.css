@@ -14,8 +14,7 @@ body {
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
+    margin: 30px;
 }
 
 #titles {
@@ -45,13 +44,6 @@ body {
     margin: 20px;
 }
 
-#val-boxar:nth-child(5) {
-    color: dimgray;
-    background-color: gray;
-    border-color: dimgray;
-    z-index: 10;
-}
-
 .amne-box {
     border: solid var(--secondary-color) 2px;
     height: 24vh;
@@ -62,8 +54,21 @@ body {
     align-items: center;
 
     font-size: 4.5vh;
-    font-family: 'PT Sans', sans-serif;
     color: var(--background-color);
     text-shadow: 2px 2px 4px var(--main-color);
     background-color: rgba(69, 39, 12, 30%);
+}
+
+#annons-box {
+    border: solid dimgray 2px;
+    height: 24vh;
+    width: 21vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+    color: dimgray;
+    font-size: 4.5vh;
 }
