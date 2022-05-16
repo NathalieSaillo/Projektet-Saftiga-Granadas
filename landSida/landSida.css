@@ -3,3 +3,198 @@
     --secondary-color:rgb(69, 39, 12);
     --background-color: rgb(255, 253, 249);
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    font-family: 'PT sans', sans-serif;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 30px;
+    color: var(--main-color);
+}
+
+#val-boxar {
+    margin: 30px;
+}
+
+.land-box {
+    /* height: 180px;
+    width: 300px;  */
+    width: auto;
+    height: auto;
+
+
+}
+
+.stader {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: 1; */
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    gap: 30px;
+}
+
+/* ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  } */
+
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.stad-box {
+    height: 255px;
+    width: 340px;
+    border: solid black 2px;
+}
+
+p {
+    text-align: center;
+    margin-top: 210px;
+    border: solid white 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+}
+
+
+#Buenos-Aires {
+    background-image: url(./Images/buenos\ aires_normal_1.jpg);
+    background-size: contain;
+}
+
+#Cordoba {
+    background-image: url(./Images/cordoba_normal_2.jpg);
+    background-size: contain;
+}
+
+#Canberra {
+    background-image: url(./Images/canberra_big_1.jpg);
+    background-size: contain;
+}
+
+#Melbourne {
+    background-image: url(./Images/melbourne_normal_2.jpg);
+    background-size: contain;
+}
+
+#Sidney {
+    background-image: url(./Images/sidney_normal_2.jpg);
+    background-size: contain;
+}
+
+#Guadalajara {
+    background-image: url(./Images/guadalajara_normal_1.jpg);
+    background-size: contain;
+}
+
+#Santiago {
+    background-image: url(./Images/santiago_big_1.jpg);
+    background-size: contain;
+}
+
+#Valparaiso {
+    background-image: url(./Images/valparaiso_normal_2.jpg);
+    background-size: contain;
+}
+
+#Lyon {
+    background-image: url(./Images/lyon_normal_3.jpg);
+    background-size: contain;
+}
+
+#Nice {
+    background-image: url(./Images/nice_normal_1.jpg);
+    background-size: contain;
+}
+
+#Paris {
+    background-image: url(./Images/paris_normal_1.jpg);
+    background-size: contain;
+}
+
+#Madrid {
+    background-image: url(./Images/madrid_normal_4.jpg);
+    background-size: contain;
+}
+
+#Salamanca {
+    background-image: url(./Images/salamanca_normal_2.jpg);
+    background-size: contain;
+}
+
+#Sevilla {
+    background-image: url(./Images/sevilla_normal_1.jpg);
+    background-size: contain;
+}
+
+#Bath {
+    background-image: url(./Images/bath_big_1.jpg);
+    background-size: contain;
+}
+
+#Edinburgh {
+    background-image: url(./Images/edinburgh_normal_1.jpg);
+    background-size: contain;
+}
+
+#London {
+    background-image: url(./Images/london_normal_3.jpg);
+    background-size: contain;
+}
+
+#Lund {
+    background-image: url(./Images/lund_big_1.jpg);
+    background-size: contain;
+}
+
+#Malmö {
+    background-image: url(./Images/malmo_normal_1.jpg);
+    background-size: contain;
+}
+
+#Stockholm {
+    background-image: url(./Images/stockholm_normal_3.jpg);
+    background-size: contain;
+}
+
+#Mexico-City {
+    background-image: url(./Images/mexico\ city_normal_2.jpg);
+    background-size: contain;
+}
+
+#Oaxaca {
+    background-image: url(./Images/oaxaca_normal_1.jpg);
+    background-size: contain;
+}
+
+#Atlanta {
+    background-image: url(./Images/atlanta_normal_2.jpg);
+    background-size: contain;
+}
+
+#Boston {
+    background-image: url(./Images/boston_big_1.jpg);
+    background-size: contain;
+}
+
+#Buffalo {
+    background-image: url(./Images/buffalo_normal_2.jpg);
+    background-size: contain;
+}
