@@ -1,3 +1,5 @@
+"use strict";
+
 function renderCountry (id) {
     let div = document.createElement("div");
      div.id = "land-box";
@@ -63,4 +65,4 @@ function renderCityInCountry (countryId) {
 //     return 0;
 // });
 
-renderCountries(COUNTRIES);
+renderCountries(DB.COUNTRIES);
