@@ -63,4 +63,4 @@ function renderCityInCountry (countryId) {
 //     return 0;
 // });
 
-renderCountries(COUNTRIES);
+renderCountries(DB.COUNTRIES);
