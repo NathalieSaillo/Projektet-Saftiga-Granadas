@@ -4,11 +4,20 @@
     --background-color: rgb(255, 253, 249);
 }
 
-menu{
-    overflow: hidden;
-    position: fixed;
-    display: flex;
+body {
     width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--background-color);
+    font-family: 'PT sans', sans-serif;
+}
+
+menu{
+    /* overflow: hidden; */
+    position: sticky;
+    display: flex;
+    width: auto;
     height: 8vh;
     /* background-color: rgba ( 198, 198, 198, 0.5); */
 }
@@ -23,6 +32,15 @@ menu{
 
 .menu:hover{
     color: white;
+}
+
+#header-bild {
+    background-image: url("./bilder/studenter.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 footer{
