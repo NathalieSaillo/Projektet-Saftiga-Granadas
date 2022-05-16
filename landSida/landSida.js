@@ -1,3 +1,5 @@
+"use strict";
+
 function renderCountry (id) {
     let div = document.createElement("div");
      div.id = "land-box";
