@@ -4,9 +4,62 @@
     --background-color: rgb(255, 253, 249);
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--background-color);
+    font-family: 'PT sans', sans-serif;
+}
+
+menu{
+    /* overflow: hidden; */
+    position: sticky;
+    display: flex;
+    width: auto;
+    height: 8vh;
+    /* background-color: rgba ( 198, 198, 198, 0.5); */
+}
+
+.menu{
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+
+}
+
+.menu:hover{
+    color: white;
+}
+
+#header-bild {
+    background-image: url("./bilder/studenter.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
 footer{
-    background-color: gray;
-    height: 30px;
+    margin-top: 10vh;
+    background-color: rgb(69, 39, 12);
+    height: 12vh;
+    padding-top: 1vh;
+}
+
+.footer{
+    color: white;
+    text-align: right;
+    padding-right: 10vw;
+    font-size: large;
+    
+}
+
+.footer:hover{
+    color: rgba(32, 186, 197, 0.4);;
 
 }
 
