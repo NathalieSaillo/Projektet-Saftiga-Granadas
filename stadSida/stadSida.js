@@ -26,6 +26,7 @@ function renderProgrammeNamesByCityId (cityId) {
     }
 
     return programmeNames.join("");
+
 } 
 
 // function showProgrammes(){
@@ -48,3 +49,6 @@ function renderCityById (cityId) {
 
 
 renderCityById (12);
+
+} 
+
