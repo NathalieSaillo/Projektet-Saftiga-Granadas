@@ -41,7 +41,7 @@ function renderCityInCountry (countryId) {
             for ( let city of DB.CITIES) {
                 if (city.countryID == country.id) {
                     let cityDiv = `
-                    <div class="stad-box">
+                    <div class="stad-box" onClick="cityClick(${city.id})">
                         <p>${city.name}</p>
                     </div>
                     `;
@@ -52,6 +52,11 @@ function renderCityInCountry (countryId) {
         }
     }
     return cityArray.join("");
+}
+
+function cityClick (cityId){
+window.sessionStorage.setItem("stad", cityId);
+window.location.href = "../stadSida/stadSida.html"
 }
 
 // COUNTRIES.sort(function(a, b){
