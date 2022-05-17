@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -26,4 +28,24 @@ function renderProgrammeNamesByCityId (cityId) {
     }
 
     return programmeNames.join("");
+
 } 
+
+
+function renderCityById (cityId) {
+     for (let city of DB.CITIES) {
+        if(city.id == cityId){
+            let cityName = document.getElementById("city");
+            cityName.classList.add("content");
+            cityName.innerHTML=`
+             ${city.name}
+             `;
+// let wrapper = document.getElementById("city")
+
+        }
+    }
+}
+
+let savedCityId = window.sessionStorage.getItem("stad")
+
+renderCityById(savedCityId)
