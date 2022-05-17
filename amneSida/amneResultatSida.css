@@ -8,28 +8,38 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    margin: 0;
 
     background-color: var(--background-color);
     font-family: 'PT sans', sans-serif;
 }
 
-menu{
+.menu {
+    background-color: rgba(255, 253, 249, 0.5);
     overflow: hidden;
     position: fixed;
+    top: 0;
     display: flex;
-    width: 100vw;
-    height: 8vh;
-    /* background-color: rgba ( 198, 198, 198, 0.5); */
+    width: 100%;
+    height: 63px;
 }
 
-.menu{
-    flex-grow: 1;
+.menu a {
+    color: black;
     text-align: center;
-    justify-content: center;
-    padding-top: 3px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    flex-grow: 1;
 }
 
-.menu:hover{
+.menu a:hover {
+    background-color: rgba(74, 188, 193, 0.5);
+    color: white;
+}
+
+.menu a.active {
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -136,10 +146,13 @@ menu{
 }
 
 footer{
-    margin-top: 10vh;
+   
     background-color: rgb(69, 39, 12);
-    height: 12vh;
+    height: 100px;
+    width: 100%;
     padding-top: 1vh;
+    
+  
 }
 
 .footer{
@@ -151,5 +164,5 @@ footer{
 }
 
 .footer:hover{
-    color: rgba(32, 186, 197, 0.4);;
+    color: rgba(32, 186, 197, 0.8);;
 }
