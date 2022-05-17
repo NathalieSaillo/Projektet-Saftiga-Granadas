@@ -64,14 +64,13 @@ body {
 }
 
 footer{
-    margin-top: 30px;
+   
     background-color: rgb(69, 39, 12);
     height: 100px;
     width: 100%;
     padding-top: 1vh;
     
-    position:absolute;
-    bottom:0;
+  
 }
 
 .footer{
