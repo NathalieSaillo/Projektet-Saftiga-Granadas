@@ -27,3 +27,20 @@ function renderProgrammeNamesByCityId (cityId) {
 
     return programmeNames.join("");
 } 
+
+
+function renderCityById (cityId) {
+     for (let city of DB.CITIES) {
+        if(city.id == cityId){
+            let cityName = document.createElement("div");
+            cityName.classList.add("content");
+
+            cityName.innerHTML=`
+            ${city.name}`;
+        }
+    }
+    
+}
+
+
+renderCityById (12);
