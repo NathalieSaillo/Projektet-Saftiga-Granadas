@@ -26,6 +26,7 @@ function renderProgrammeNamesByCityId (cityId) {
     }
 
     return programmeNames.join("");
+
 } 
 
 
@@ -44,3 +45,6 @@ function renderCityById (cityId) {
 
 
 renderCityById (12);
+
+} 
+
