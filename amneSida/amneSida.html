@@ -11,14 +11,14 @@
     <title>Ämne</title>
 </head>
 <body>
-    <menu>
-        <div class="menu">Logo</div>
-        <div class="menu">Länder</div>
-        <div class="menu">Ämnen</div>
-        <div class="menu">Osäker?</div>
-        <div class="menu">Om oss</div>
-        <div class="menu">FAQ</div>
-    </menu>
+    <div class="menu">
+        <a href="../startSida/startSida.html">Logo</a>
+        <a href="../landSida/landSida.html">Länder</a>
+        <a class="active" href="../amneSida/amneSida.html">Ämnen</a>
+        <a href="../osakerSida/osakerSida.html">Osäker?</a>
+        <a href="..//omOssSida/omOssSida.html">Om oss</a>
+        <a href="../FAQ/FAQ.html">FAQ</a>
+    </div>
 
     <div id="container">
         <div id="annons-ett"></div>
@@ -28,14 +28,14 @@
             <h3>Välj ett ämne här nedanför så visas vilka program som finns</h3>
         </div>
         <div id="val-boxar">
-            <div class="amne-box">Design</div>
-            <div class="amne-box">Filosofi</div>
-            <div class="amne-box">Juridik</div>
-            <div class="amne-box">Matematik</div>
-            <div id="annons-box">Annons</div>
-            <div class="amne-box">Medicin</div>
-            <div class="amne-box">Sociologi</div>
-            <div class="amne-box">Teknik</div>
+            <!-- <a href="../amneSida/amneResultatSida.html" class="amne-box">Design</a>
+            <a class="amne-box">Filosofi</a>
+            <a class="amne-box">Juridik</a>
+            <a class="amne-box">Matematik</a>
+            <a id="annons-box">Annons</a>
+            <a class="amne-box">Medicin</a>
+            <a class="amne-box">Sociologi</a>
+            <a class="amne-box">Teknik</a> -->
         </div>
     </div>
 
@@ -44,7 +44,8 @@
         <p class="footer">Cookies</p>
     </footer>
 
-    <script src="database.js"></script>
+    <script src="../databasen/commentsProgramme.js"></script>
+    <script src="../databasen/database.js"></script>
     <script src="amneSida.js"></script>
 </body>
 </html>
