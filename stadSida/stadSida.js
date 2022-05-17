@@ -1,5 +1,5 @@
 "use strict";
-
+//tar fram alla program som finns i staden 
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -14,7 +14,7 @@ function getProgrammesByCityId (cityId) {
     }
     return programmes;
 }
-
+//visa programmen som finns i staden
 function renderProgrammeNamesByCityId (cityId) {
     let programmes = getProgrammesByCityId(cityId);
 
@@ -29,15 +29,19 @@ function renderProgrammeNamesByCityId (cityId) {
 
 } 
 
+// function showProgrammes(){
+
+// }
 
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
-            let cityName = document.createElement("div");
-            cityName.classList.add("content");
+            console.log(`Detta är ${city.name}`)
+            // let cityName = document.createElement("div");
+            // cityName.id = ("city");
 
-            cityName.innerHTML=`
-            ${city.name}`;
+            // cityName.innerHTML=`
+            // ${city.name}`;
         }
     }
     
