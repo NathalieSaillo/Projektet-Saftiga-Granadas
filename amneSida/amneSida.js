@@ -1,5 +1,6 @@
 "use strict";
 
+
 function getFieldNameById (id) {
     let fieldName = FIELDS.find(field => {
         if (field.id == id) {
@@ -7,17 +8,20 @@ function getFieldNameById (id) {
         }
     });
 
-    return fieldName;
+    return fieldName.name;
 }
 
 function renderFieldBox (id) {
-    let div = document.createElement("a");
+    let div = document.createElement("div");
     div.classList.add("amne-box")
 
     div.innerHTML =`
-    ${getFieldNameById(id)}
+    <button class="button" id="amneButton">${getFieldNameById(id)}</button>
     `;
-
+    div.addEventListener("click", function() {
+        document.getElementById("wrapper").hidden = true;
+        document.getElementById("container").hidden = false;
+    }, false);
     return div;
 }
 
@@ -31,4 +35,7 @@ function renderFields (fields) {
     }
 }
 
-renderFields(DB.FIELDS)
+
+
+renderFields(DB.FIELDS);
+
