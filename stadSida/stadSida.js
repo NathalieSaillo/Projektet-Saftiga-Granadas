@@ -2,6 +2,7 @@
 
 //tar fram alla program som finns i staden 
 
+
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -32,9 +33,15 @@ function renderProgrammeNamesByCityId (cityId) {
 } 
 
 
+
 // function showProgrammes(){
 
 // }
+
+function renderCityById (cityId) {
+     for (let city of DB.CITIES) {
+        if(city.id == cityId){
+
 
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
@@ -53,6 +60,7 @@ function renderCityById (cityId) {
 
 let savedCityId = window.sessionStorage.getItem("stad");
 
+
 renderCityById(savedCityId);
 
 //             console.log(`Detta är ${city.name}`)
@@ -68,3 +76,6 @@ renderCityById(savedCityId);
 
 
 //funktion som visar
+
+renderCityById(savedCityId);
+

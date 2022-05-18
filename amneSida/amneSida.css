@@ -116,13 +116,10 @@ body {
 }
 
 footer{
-   
     background-color: rgb(69, 39, 12);
     height: 100px;
     width: 100%;
     padding-top: 1vh;
-    
-  
 }
 
 .footer{
@@ -134,7 +131,7 @@ footer{
 }
 
 .footer:hover{
-    color: rgba(32, 186, 197, 0.8);;
+    color: rgba(32, 186, 197, 0.8);
 }
 
 button, input[type="submit"], input[type="reset"] {
