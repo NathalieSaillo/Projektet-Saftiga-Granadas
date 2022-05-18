@@ -43,11 +43,8 @@ body {
 }
 
 #header{
-
-    /* background-color: gray; */
-
-    background-color: grey;
-
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0px;
     height: 70vh;
     width: 100vw;
@@ -57,7 +54,11 @@ body {
 
 #wrapper{
     padding-top: 25vh;
-   
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 40vh;
+    width: 100vw;
 }
 
 
@@ -195,7 +196,7 @@ body {
 
 #text{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin-top: 60px;
 }
 p{

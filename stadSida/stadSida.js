@@ -47,7 +47,7 @@ function renderCityById (cityId) {
             let cityName = document.getElementById("city");
             cityName.classList.add("content");
             cityName.innerHTML=`
-             ${city.name}
+             <p>${city.name}, ${renderCountryName(city.countryID)}</p>
              `;
 // let wrapper = document.getElementById("city")
 
@@ -55,12 +55,22 @@ function renderCityById (cityId) {
     }
 }
 
+function renderCountryName (id) {
+    let countryName = COUNTRIES.find(country => {
+        if (country.id == id) {
+            return true;
+            
+        }
+    });
+     return countryName.name;
+}
+
 let savedCityId = window.sessionStorage.getItem("stad");
 
 //funktion för att se antal soldagar
-function getSunDays(cityId){
-    for( let city of DB.CITIES){
-        if(city.id == cityId){
+    function getSunDays(cityId){
+        for( let city of DB.CITIES){
+            if(city.id == cityId){
 
             let sumSunDays = document.getElementById("sun");
             sumSunDays.classList.add("content");
@@ -71,36 +81,35 @@ function getSunDays(cityId){
     }
 }
 
-// renderCityById(12);
-// getSunDays(12);
+function studyInCity (cityId){
+    for( let city of DB.CITIES){
+        if(city.id == cityId){
 
-//             console.log(`Detta är ${city.name}`)
-//             // let cityName = document.createElement("div");
-//             // cityName.id = ("city");
+        let sumSunDays = document.getElementById("text");
+        sumSunDays.innerHTML=` 
+        <p class="ta-chansen">Ta chansen att studera i ${city.name}</p>
+        <p>${city.text}</p>
+        `;
+    }
+}
+}
 
-//             // cityName.innerHTML=`
-//             // ${city.name}`;
-//         }
-//     }
-// }
+ renderCityById(savedCityId);
+ getSunDays(savedCityId);
+cityImage(savedCityId);
+studyInCity(savedCityId)
 
-//funktion som visar
 
-// renderCityById(23); 
+// funktion som visar bakgrundsbild bakom cityName.
+ function cityImage(cityId){
+     for( let city of DB.CITIES){
+         if(city.id == cityId){
 
-//funktion som visar bakgrundsbild bakom cityName.
-// function cityImage(cityId){
-//     for( let city of DB.CITIES){
-//         if(city.id == cityId){
-
-//             let cityImage = document.getElementById("header");
-//             cityImage.id= ("wrapper");
-//             cityImage.innerHTML=`
-//             <img src"${city.imagesBig}" alt="image of city">
-//             `;
-//         }
-//     }
-// }
+             let cityImage = document.getElementById("wrapper");
+             cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesBig[0]})`;
+         }
+     }
+ }
 
 
 // cityImage(12)
