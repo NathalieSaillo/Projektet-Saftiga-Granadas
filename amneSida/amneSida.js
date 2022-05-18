@@ -35,7 +35,17 @@ function renderFields (fields) {
     }
 }
 
-
-
 renderFields(DB.FIELDS);
 
+
+// funktion för att hämta städer i länder
+
+// funktion för att hämta universitet i städer
+
+// funktion för att hämta program i universitet
+
+// funktion för att rendrera all denna information
+
+// funktion för att göra dropdown på boxarna
+
+// funktion för att 

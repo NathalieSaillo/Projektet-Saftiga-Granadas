@@ -14,7 +14,7 @@ body {
     font-family: 'PT sans', sans-serif;
 }
 
-.menu {
+#menu {
     background-color: rgba(255, 253, 249, 0.5);
     overflow: hidden;
     position: fixed;
@@ -24,7 +24,7 @@ body {
     height: 63px;
 }
 
-.menu a {
+#menu a {
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -33,12 +33,12 @@ body {
     flex-grow: 1;
 }
 
-.menu a:hover {
+#menu a:hover {
     background-color: rgba(74, 188, 193, 0.5);
     color: white;
 }
 
-.menu a.active {
+#menu a.active {
     background-color: var(--main-color);
     color: white;
 }
