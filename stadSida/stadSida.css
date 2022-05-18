@@ -38,7 +38,7 @@ body {
 }
 
 #header{
-    background-color: gray;
+    /* background-color: gray; */
     margin: 0px;
     height: 70vh;
     width: 100vw;
@@ -48,6 +48,7 @@ body {
 
 #wrapper{
     padding-top: 25vh;
+   
 }
 
 

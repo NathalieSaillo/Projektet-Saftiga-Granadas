@@ -1,8 +1,6 @@
 "use strict";
 
 //tar fram alla program som finns i staden 
-
-
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -17,6 +15,7 @@ function getProgrammesByCityId (cityId) {
     }
     return programmes;
 }
+
 //visa programmen som finns i staden
 function renderProgrammeNamesByCityId (cityId) {
     let programmes = getProgrammesByCityId(cityId);
@@ -29,10 +28,7 @@ function renderProgrammeNamesByCityId (cityId) {
     }
 
     return programmeNames.join("");
-
 } 
-
-
 
 // function showProgrammes(){
 
@@ -64,7 +60,7 @@ let savedCityId = window.sessionStorage.getItem("stad");
 //funktion för att se antal soldagar
 function getSunDays(cityId){
     for( let city of DB.CITIES){
-        if(city.id ==cityId){
+        if(city.id == cityId){
 
             let sumSunDays = document.getElementById("sun");
             sumSunDays.classList.add("content");
@@ -73,11 +69,10 @@ function getSunDays(cityId){
             `;
         }
     }
-    
-
 }
 
-renderCityById(savedCityId);
+// renderCityById(12);
+// getSunDays(12);
 
 //             console.log(`Detta är ${city.name}`)
 //             // let cityName = document.createElement("div");
@@ -89,9 +84,23 @@ renderCityById(savedCityId);
 //     }
 // }
 
-
-
 //funktion som visar
 
-// renderCityById(23);
+// renderCityById(23); 
 
+//funktion som visar bakgrundsbild bakom cityName.
+// function cityImage(cityId){
+//     for( let city of DB.CITIES){
+//         if(city.id == cityId){
+
+//             let cityImage = document.getElementById("header");
+//             cityImage.id= ("wrapper");
+//             cityImage.innerHTML=`
+//             <img src"${city.imagesBig}" alt="image of city">
+//             `;
+//         }
+//     }
+// }
+
+
+// cityImage(12)
