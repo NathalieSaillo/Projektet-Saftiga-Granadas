@@ -38,12 +38,12 @@ function renderProgrammeNamesByCityId (cityId) {
 
 // }
 
-function renderCityById (cityId) {
-     for (let city of DB.CITIES) {
-        if(city.id == cityId){
-        }
-    }
-}
+// function renderCityById (cityId) {
+//      for (let city of DB.CITIES) {
+//         if(city.id == cityId){
+//         }
+//     }
+// }
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
@@ -61,6 +61,21 @@ function renderCityById (cityId) {
 
 let savedCityId = window.sessionStorage.getItem("stad");
 
+//funktion för att se antal soldagar
+function getSunDays(cityId){
+    for( let city of DB.CITIES){
+        if(city.id ==cityId){
+
+            let sumSunDays = document.getElementById("sun");
+            sumSunDays.classList.add("content");
+            sumSunDays.innerHTML=`
+            ${city.sun}
+            `;
+        }
+    }
+    
+
+}
 
 renderCityById(savedCityId);
 
@@ -78,5 +93,5 @@ renderCityById(savedCityId);
 
 //funktion som visar
 
-renderCityById(savedCityId);
+// renderCityById(23);
 
