@@ -41,8 +41,9 @@ function renderProgrammeNamesByCityId (cityId) {
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
-
-
+        }
+    }
+}
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
