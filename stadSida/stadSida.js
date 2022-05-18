@@ -94,10 +94,10 @@ function studyInCity (cityId){
 }
 }
 
- renderCityById(savedCityId);
- getSunDays(savedCityId);
-cityImage(savedCityId);
-studyInCity(savedCityId)
+ renderCityById(24);
+ getSunDays(24);
+cityImage(24);
+studyInCity(24);
 
 
 // funktion som visar bakgrundsbild bakom cityName.
