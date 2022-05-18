@@ -37,8 +37,13 @@ body {
     color: white;
 }
 
+#image {
+    display: flex;
+
+}
+
 #header{
-    background-color: gray;
+    background-color: grey;
     margin: 0px;
     height: 70vh;
     width: 100vw;
