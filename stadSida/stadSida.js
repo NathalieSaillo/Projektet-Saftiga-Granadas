@@ -68,30 +68,14 @@ function getSunDays(cityId){
 
             let sumSunDays = document.getElementById("sun");
             sumSunDays.classList.add("content");
-            sumSunDays.innerHTML=`
-            ${city.sun}
+            sumSunDays.innerHTML=` 
+           antal soldagar: ${city.sun}
             `;
         }
     }
-    
-
 }
 
+
+getSunDays(savedCityId)
 renderCityById(savedCityId);
-
-//             console.log(`Detta är ${city.name}`)
-//             // let cityName = document.createElement("div");
-//             // cityName.id = ("city");
-
-//             // cityName.innerHTML=`
-//             // ${city.name}`;
-//         }
-//     }
-// }
-
-
-
-//funktion som visar
-
-// renderCityById(23);
 
