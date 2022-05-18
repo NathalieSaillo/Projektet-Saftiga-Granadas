@@ -1,6 +1,8 @@
 "use strict";
 
 //tar fram alla program som finns i staden 
+
+
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -30,9 +32,22 @@ function renderProgrammeNamesByCityId (cityId) {
 
 } 
 
+
+
+// function showProgrammes(){
+
+// }
+
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
+        }
+    }
+}
+function renderCityById (cityId) {
+     for (let city of DB.CITIES) {
+        if(city.id == cityId){
+
             let cityName = document.getElementById("city");
             cityName.classList.add("content");
             cityName.innerHTML=`
@@ -44,6 +59,24 @@ function renderCityById (cityId) {
     }
 }
 
-let savedCityId = window.sessionStorage.getItem("stad")
+let savedCityId = window.sessionStorage.getItem("stad");
+
 
 renderCityById(savedCityId);
+
+//             console.log(`Detta är ${city.name}`)
+//             // let cityName = document.createElement("div");
+//             // cityName.id = ("city");
+
+//             // cityName.innerHTML=`
+//             // ${city.name}`;
+//         }
+//     }
+// }
+
+
+
+//funktion som visar
+
+renderCityById(savedCityId);
+
