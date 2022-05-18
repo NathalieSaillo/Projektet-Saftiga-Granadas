@@ -46,4 +46,4 @@ function renderCityById (cityId) {
 
 let savedCityId = window.sessionStorage.getItem("stad")
 
-renderCityById(savedCityId)
+renderCityById(savedCityId);
