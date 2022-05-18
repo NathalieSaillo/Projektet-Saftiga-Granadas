@@ -47,7 +47,7 @@ function renderCityById (cityId) {
             let cityName = document.getElementById("city");
             cityName.classList.add("content");
             cityName.innerHTML=`
-             <p>${city.name}, ${renderCountryName(city.countryID)}</p>
+             <p class="city-name">${city.name}, ${renderCountryName(city.countryID)}</p>
              `;
 // let wrapper = document.getElementById("city")
 

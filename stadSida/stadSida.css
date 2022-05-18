@@ -46,7 +46,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0px;
-    height: 70vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -59,6 +58,10 @@ body {
     margin: 0px;
     height: 40vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -73,13 +76,15 @@ body {
 
 #city.content{
     border: white solid 1px;
-    width: 200px;
+    width: 400px;
+    height: 60px;
     padding: 5px;
     font-size: 4.2vh;
     font-weight: 900;
     margin-top: 10px;
     margin-bottom: 10px;
-    
+    background-color: rgba(255, 255, 255, 50%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 #content{
@@ -166,7 +171,9 @@ body {
 }
 
 
-
+.city-name {
+    font-size: 40px;
+}
 
 #info-wrapper{
     height: 300px;
@@ -197,12 +204,11 @@ body {
 #text{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    margin-top: 60px;
 }
 p{
     margin-top: 10px;
     margin-left: 3vw;
-    color: turquoise;
+    color: rgb(25, 130, 135);
     font-size: 2vw;  
     font-weight: 1000;
  
