@@ -47,19 +47,17 @@ body {
     margin-top: 100px;
 }
 
-#container {
-    margin-top: 100px;
-}
-
 #annons-ett{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: gray;
+    color: dimgray;
+    font-size: 4.5vh;
     height: 20vh;
     width: 97vw;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #titles {
@@ -107,7 +105,7 @@ body {
 #annons-box {
     border: solid dimgray 2px;
     height: 24vh;
-    width: 21vw;
+    width: auto;
 
     display: flex;
     justify-content: center;
