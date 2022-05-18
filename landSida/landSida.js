@@ -10,8 +10,7 @@ function renderCountry (id) {
         </div>
     `
     return div;
-  
- }
+}
 
 function renderCountries (countries) {
     let countriesElement = document.getElementById("val-boxar");
@@ -26,16 +25,17 @@ function renderCountryName (id) {
     let countryName = COUNTRIES.find(country => {
         if (country.id == id) {
             return true;
+            
         }
     });
      return countryName.name;
 }
 
+
+
 function renderCityInCountry (countryId) {
-    // debugger;
     let cityArray = [];
-    // let city = CITIES[id];
-    // return city.name;
+
     for ( let country of DB.COUNTRIES ) {
         if (countryId == country.id ) {
             for ( let city of DB.CITIES) {
@@ -45,8 +45,8 @@ function renderCityInCountry (countryId) {
                         <p>${city.name}</p>
                     </div>
                     `;
-                    
                     cityArray.push(cityDiv);
+                  
                 }
             } 
         }
@@ -56,12 +56,12 @@ function renderCityInCountry (countryId) {
 
 function cityClick (cityId){
 window.sessionStorage.setItem("stad", cityId);
-window.location.href = "../stadSida/stadSida.html"
+window.location.href = "../stadsida/stadSida.html";
 }
 
+//sortera länderna i bokstavsordning
 // COUNTRIES.sort(function(a, b){
-//     if (a.n
-//  name > b.name) {
+//     if (a.name > b.name) {
 //         return 1;
 //     }
 //     if (a.name < b.name){

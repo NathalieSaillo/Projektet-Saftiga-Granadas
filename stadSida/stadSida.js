@@ -1,11 +1,7 @@
 "use strict";
-stadsida_stader_funktion
-
-
-
 
 //tar fram alla program som finns i staden 
- main
+
 function getProgrammesByCityId (cityId) {
     let programmes = [];
 
@@ -35,17 +31,15 @@ function renderProgrammeNamesByCityId (cityId) {
 
 } 
 
- stadsida_stader_funktion
 
 // function showProgrammes(){
 
 // }
-main
 
 function renderCityById (cityId) {
      for (let city of DB.CITIES) {
         if(city.id == cityId){
-stadsida_stader_funktion
+
             let cityName = document.getElementById("city");
             cityName.classList.add("content");
             cityName.innerHTML=`
@@ -57,24 +51,20 @@ stadsida_stader_funktion
     }
 }
 
-let savedCityId = window.sessionStorage.getItem("stad")
+let savedCityId = window.sessionStorage.getItem("stad");
 
-renderCityById(savedCityId)
+renderCityById(savedCityId);
 
-            console.log(`Detta är ${city.name}`)
-            // let cityName = document.createElement("div");
-            // cityName.id = ("city");
+//             console.log(`Detta är ${city.name}`)
+//             // let cityName = document.createElement("div");
+//             // cityName.id = ("city");
 
-            // cityName.innerHTML=`
-            // ${city.name}`;
-        }
-    }
-    
-}
+//             // cityName.innerHTML=`
+//             // ${city.name}`;
+//         }
+//     }
+// }
 
 
-renderCityById (12);
 
-} 
-
- main
+//funktion som visar
