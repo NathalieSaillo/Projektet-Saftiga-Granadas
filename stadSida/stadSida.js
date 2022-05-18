@@ -88,11 +88,25 @@ function studyInCity (cityId){
         let sumSunDays = document.getElementById("text");
         sumSunDays.innerHTML=` 
         <p class="ta-chansen">Ta chansen att studera i ${city.name}</p>
-        <p>${city.text}</p>
+       <p> Tidigare Studenter</p>
+       <p>${city.text}</p>
+        <div class="review-city" id="comments-box">${commentsOfCity(savedCityId).text}</div>
+        
         `;
     }
 }
 }
+
+function commentsOfCity(cityId) {
+    let commentsName = COMMENTS_CITY.find(comment => {
+        if (comment.cityID == cityId) {
+            return true;
+            
+        }
+    });
+     return commentsName;
+}
+
 
  renderCityById(savedCityId);
  getSunDays(savedCityId);

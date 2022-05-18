@@ -204,12 +204,13 @@ body {
 #text{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 p{
     margin-top: 10px;
     margin-left: 3vw;
     color: rgb(25, 130, 135);
-    font-size: 2vw;  
+    font-size: 18px;  
     font-weight: 1000;
  
 }
