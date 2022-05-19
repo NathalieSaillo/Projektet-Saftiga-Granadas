@@ -51,12 +51,19 @@ function renderCityInCountry (countryId) {
             } 
         }
     }
+
+    
     return cityArray.join("");
 }
+//funktion som visar bilder bakom länder
+function citiesImages(cityArray){
+    for (let city of cityArray){
+        if(city.id == cityArray.id){
 
-function cityClick (cityId){
-window.sessionStorage.setItem("stad", cityId);
-window.location.href = "../stadsida/stadSida.html";
+            let cityImages = document.getElementByClassName("stad-box");
+            cityImages.style.backgroundImage =`url(../databasen/Images/${city.imagesNormal[0]})`; 
+        }
+    }
 }
 
 //sortera länderna i bokstavsordning
@@ -69,5 +76,12 @@ window.location.href = "../stadsida/stadSida.html";
 //     }
 //     return 0;
 // });
-
+citiesImages(DB.CITIES);
 renderCountries(DB.COUNTRIES);
+
+
+
+function cityClick (cityId){
+    window.sessionStorage.setItem("stad", cityId);
+    window.location.href = "../stadsida/stadSida.html";
+    }

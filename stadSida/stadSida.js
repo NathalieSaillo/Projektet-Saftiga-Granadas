@@ -97,6 +97,7 @@ function studyInCity (cityId){
 }
 }
 
+
 function commentsOfCity(cityId) {
     let commentsName = COMMENTS_CITY.find(comment => {
         if (comment.cityID == cityId) {
@@ -112,6 +113,7 @@ function commentsOfCity(cityId) {
  getSunDays(savedCityId);
 cityImage(savedCityId);
 studyInCity(savedCityId)
+
 
 
 // funktion som visar bakgrundsbild bakom cityName.
