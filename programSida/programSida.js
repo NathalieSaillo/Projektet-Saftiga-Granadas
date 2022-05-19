@@ -1,5 +1,7 @@
 "use strict"
 
+
+
 //funktion som ska lägga till programmets namn i headern
 function renderProgrammeById(programmeId) {
     for(let programme of DB.PROGRAMMES) {
@@ -8,7 +10,7 @@ function renderProgrammeById(programmeId) {
             programmeName.classList.add("content");
             programmeName.innerHTML = `
             <p class ="course-name">${programme.name}
-            ${renderComments(programmeId)}
+            <div style="display: none">${renderComments(programmeId)}</div>
             `;
 
             // // console.log(`${programme.name}`);
@@ -19,24 +21,76 @@ function renderProgrammeById(programmeId) {
     }
 }
 
-function renderInfoAboutProgramme(){
+function renderInfoAboutProgramme(programmeId){
     for (let programme of DB.PROGRAMMES) {
-       if(programme.id == id) {
+       if(programme.id == programmeId) {
            let programmeName = document.getElementById("text-div");
            programmeName.innerHTML = `
-           <p>Land: ${programme.name}</p>
+           <p>universitet: ${renderUniversity (programmeId)}</p>
+           <p>ämne: ${renderField(programmeId)}</p>
+           <p>språk: ${renderLanguage(programmeId)}</p>
+           <p>nivå: ${renderLevel(programmeId)}</p>
            `;
        }
         
     }
 }
 
+function renderLanguage(languageId){
+    for (let programme of DB.PROGRAMMES) {
+        if(programme.id == languageId) {
+            for (let language of DB.LANGUAGES) {
+                if(language.id == languageId){
+                    return language.name
+                }
+            }
+}
+    }
+}
+
+function renderField(fieldId){
+    for (let programme of DB.PROGRAMMES) {
+        if(programme.id == fieldId) {
+            for (let field of DB.FIELDS) {
+                if(field.id == fieldId){
+                    return field.name
+                }
+            }
+}
+    }
+}
+
+function renderUniversity (universityId){
+    for (let programme of DB.PROGRAMMES) {
+        if(programme.id == universityId) {
+            for (let university of DB.UNIVERSITIES) {
+                if(university.id == universityId){
+                    return university.name
+                }
+            }
+}
+    }
+}
+
+function renderLevel(languageId){
+    for (let programme of DB.PROGRAMMES) {
+        if(programme.id == languageId) {
+            for (let level of DB.LEVELS) {
+                if(level == languageId){
+                    return level
+                }
+            }
+}
+    }
+}
+
+renderInfoAboutProgramme(0)
+
 function renderComments (programmeId){
     for (let comment of DB.COMMENTS_PROGRAMME) {
         let allComment = document.getElementById("comment-wrapper")
         if(comment.programmeID == programmeId) {
             let programmeName = document.createElement("div");
-         
             programmeName.innerHTML = `
             <div id="comment-div">
             <p>
@@ -102,4 +156,4 @@ function getUniversityById (programmeId) {
 //     for 
 // }
 
-renderProgrammeById(1);
+renderProgrammeById(0);
