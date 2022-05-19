@@ -87,6 +87,18 @@ body {
     gap: 30px;
 }
 
+#stader::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+  
+#stader::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(69, 39, 12, 0.4);
+    box-shadow: 0 0 1px rgba(69, 39, 12, 0.4);
+    -webkit-box-shadow: 0 0 1px rgba(69, 39, 12, 0.4);
+}
+
 .country-name {
     font-size: 30px;
     font-weight: 100;

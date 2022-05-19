@@ -1,7 +1,7 @@
 :root {
     --main-color:rgb(74, 188, 193); 
     --secondary-color:rgb(69, 39, 12);
-    --background-color: rgb(255, 253, 249);
+    --background-color: rgb(235, 228, 214);
 }
 
 body {
@@ -14,6 +14,7 @@ body {
     font-family: 'PT sans', sans-serif;
 }
 
+/* MENU STYLE */
 .menu {
     background-color: rgba(255, 253, 249, 0.5);
     overflow: hidden;
@@ -43,11 +44,7 @@ body {
     color: white;
 }
 
-#image {
-    display: flex;
-
-}
-
+/* HEADER STYLE */
 #header{
     background-size: contain;
     background-repeat: no-repeat;
@@ -103,22 +100,46 @@ body {
     font-weight: 900;
 }
 
-#annons-ett{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    height: 20vh;
-    width: 97vw;
-    margin: auto;
-    margin-top: 10px;
+p.city-name { 
+    color: rgb(60, 152, 157);  
+    font-weight: 1000;
+
+    text-align: center;
+    font-size: 40px;
 }
 
+
+/* bort?
+#image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    width: 90vw;
+    margin-left: 10vh;
+    margin-bottom: 1;
+    margin-right: 5px;
+}  
+
+.box-image{ 
+    height: 20vw;
+    width: 25vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    margin: 5px;
+  
+} 
+*/
+
+/* INFO BOX STYLE */
 .ta-chansen{
-    color: black;
+    color: var(--secondary-color);
     font-size: 40px;
     margin-left: 10vw;
-    font-family: 'Anek Bangla', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 
@@ -126,19 +147,104 @@ body {
 .city-info{
     margin-right: 9vw;
     margin-left: 9vw;
-    border: 1px black solid;
     padding: 80px;
+
     font-size: 18px;
-    /* background-color: rgb(177, 244, 247);  */
+    background-color: rgba(74, 188, 193, 0.2);
+    border: 1px var(--secondary-color) solid;
+}
+
+#city-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    height: 20vw;
+    width: auto;
+
+    margin: 30px;
+}
+
+.city-image{
+    height: auto;
+    width: auto;
+}
+
+#annons-box{
+    border: solid dimgray 2px;
+    height: auto;
+    width: 420px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+    color: dimgray;
+    font-size: 4.5vh;
+}
+
+/* bort?
+ #image {
+    display: flex;
+} */
+
+/* PROGRAMME BOX STYLE */
+#programme-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#programme-title {
+    color: var(--main-color);
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 2px;
+}
+
+#programme-box {
+    border: 2px solid var(--secondary-color);
+    width: 800px;
+    height: 300px;
+    background-color: white;
+
+    overflow-y: scroll;
     
 }
 
+#programme-box::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+  
+#programme-box::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(69, 39, 12, 0.4);
+    box-shadow: 0 0 1px rgba(69, 39, 12, 0.4);
+    -webkit-box-shadow: 0 0 1px rgba(69, 39, 12, 0.4);
+}
+
+.programme-info {
+    height: auto;
+    margin: 0;
+    padding-left: 12px;
+}
+
+.programme-info:nth-child(2n) {
+    background-color: gainsboro;
+    height: auto;
+}
+
+/* bort?
 #subjects-header{
     font-size:xx-large;
     color: rgb(34, 221, 221);
     font-family: 'PT Sans', sans-serif;
     margin-left: 10vw;
-    /* margin: 4vw 10vw 2vw; */
+    margin: 4vw 10vw 2vw;
     margin-top: 10vw;
 }
 
@@ -195,9 +301,10 @@ body {
 
 .line:nth-child(even){
     background-color: rgb(255, 253, 249);
-}
+} */
 
 
+/* bort?
 #info-wrapper{
     height: 300px;
     width: auto;
@@ -222,74 +329,27 @@ body {
     width: 35vw;
     display: flex;
     align-items: center;
-}
+} */
 
 /* #text{
     margin: 30px;
 } */
-
-p.city-name { 
-    color: rgb(60, 152, 157);  
-    font-weight: 1000;
-
-    text-align: center;
-    font-size: 40px;
-}
-
-
-#image-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vw;
-    width: 90vw;
-    margin-left: 10vh;
-    margin-bottom: 1;
-    /* margin-right: 5px; */
-
-} 
-
-.box-image{ 
-    height: 20vw;
-    width: 25vw; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gainsboro;
-    margin: 5px;
-  
-} 
-
-#city-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
-    height: 20vw;
-    width: auto;
-
-    margin: 30px;
-}
-
-.city-image{
-    height: auto;
-    width: auto;
-}
-
-#annons-box{
-    border: solid dimgray 2px;
-    height: auto;
-    width: 420px;
-
+#annons-ett{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 20vh;
+    width: 97vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
     background-color: gray;
+    border: solid dimgray 2px;
     color: dimgray;
     font-size: 4.5vh;
 }
-
 
 footer{
     background-color: rgb(69, 39, 12);
