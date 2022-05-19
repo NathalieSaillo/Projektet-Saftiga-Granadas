@@ -20,7 +20,7 @@ DB.CITIES.sort(function(a, b) {
         return 0;
           });
      
-
+// renders country and makes an internal HTML to render it on webside  
 function renderCountry (id) {
     let div = document.createElement("div");
      div.id = "land-box";
@@ -32,7 +32,7 @@ function renderCountry (id) {
     `
     return div;
 }
-
+// function that renders all the countries in database
 function renderCountries (countries) {
     let countriesElement = document.getElementById("val-boxar");
     
@@ -41,7 +41,7 @@ function renderCountries (countries) {
         countriesElement.appendChild(countryElement);
     }
 }
-
+// render name of the country and returns it 
 function renderCountryName (id) {
     let countryName = COUNTRIES.find(country => {
         if (country.id == id) {
@@ -53,7 +53,7 @@ function renderCountryName (id) {
 }
 
 
-
+// renders cities that are in specified countries
 function renderCityInCountry (countryId) {
     let cityArray = [];
 
@@ -100,7 +100,7 @@ function citiesImages(cityArray){
         }
     }
 }
-
+// saves a personal storage for the user that uses the site, it makes it possible to show the right city after click
 function cityClick (cityId){
 window.sessionStorage.setItem("stad", cityId);
 window.location.href = "../stadsida/stadSida.html";
