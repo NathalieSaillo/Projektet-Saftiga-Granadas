@@ -61,6 +61,7 @@ body {
     padding-top: 25vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0px;
     height: 40vh;
     width: 100vw;
@@ -113,7 +114,24 @@ body {
     margin-top: 10px;
 }
 
-.info-city
+.ta-chansen{
+    color: black;
+    font-size: 40px;
+    margin-left: 10vw;
+    font-family: 'Anek Bangla', sans-serif;
+    font-weight: 500;
+}
+
+
+.city-info{
+    margin-right: 9vw;
+    margin-left: 9vw;
+    border: 1px black solid;
+    padding: 80px;
+    font-size: 18px;
+    /* background-color: rgb(177, 244, 247);  */
+    
+}
 
 #subjects-header{
     font-size:xx-large;
@@ -206,9 +224,9 @@ body {
     align-items: center;
 }
 
-#text{
-    margin: 20px;
-}
+/* #text{
+    margin: 30px;
+} */
 
 p.city-name { 
     color: rgb(60, 152, 157);  
@@ -216,11 +234,6 @@ p.city-name {
 
     text-align: center;
     font-size: 40px;
-}
-
-.ta-chansen{
-    margin-left: 13vw;
-
 }
 
 
@@ -266,7 +279,7 @@ p.city-name {
 #annons-box{
     border: solid dimgray 2px;
     height: auto;
-    width: 250px;
+    width: 420px;
 
     display: flex;
     justify-content: center;

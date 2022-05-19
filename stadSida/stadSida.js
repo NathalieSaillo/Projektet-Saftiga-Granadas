@@ -101,7 +101,8 @@ function studyInCity (cityId){
         sumSunDays.innerHTML=` 
         <p class="ta-chansen">Ta chansen att studera i ${city.name}</p>
    
-       <p>${city.text}</p>
+        <p class = city-info>${city.text}</p>
+
             <div id= "city-images">
                 <div id = "annons-box"> Annons </div> 
                 <img src = "../databasen/Images/${city.imagesNormal[0]}" class="city-image"/>
