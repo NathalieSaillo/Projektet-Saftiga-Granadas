@@ -126,7 +126,7 @@ body {
 .city-info{
     margin-right: 9vw;
     margin-left: 9vw;
-    border: 1px black solid;
+    border: 1px rgb(74, 188, 193) solid;
     padding: 80px;
     font-size: 18px;
     /* background-color: rgb(177, 244, 247);  */
