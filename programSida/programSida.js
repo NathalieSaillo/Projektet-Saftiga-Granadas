@@ -1,4 +1,5 @@
 "use strict"
+
 //funktion som ska lägga till programmets namn i headern
 function renderProgrammeById(programmeId) {
     for(let programme of DB.PROGRAMMES) {
@@ -7,6 +8,7 @@ function renderProgrammeById(programmeId) {
             programmeName.classList.add("content");
             programmeName.innerHTML = `
             <p class ="course-name">${programme.name}
+            ${renderComments(programmeId)}
             `;
 
             // // console.log(`${programme.name}`);
@@ -17,6 +19,57 @@ function renderProgrammeById(programmeId) {
     }
 }
 
+function renderInfoAboutProgramme(){
+    for (let programme of DB.PROGRAMMES) {
+       if(programme.id == id) {
+           let programmeName = document.getElementById("text-div");
+           programmeName.innerHTML = `
+           <p>Land: ${programme.name}</p>
+           `;
+       }
+        
+    }
+}
+
+function renderComments (programmeId){
+    for (let comment of DB.COMMENTS_PROGRAMME) {
+        let allComment = document.getElementById("comment-wrapper")
+        if(comment.programmeID == programmeId) {
+            let programmeName = document.createElement("div");
+         
+            programmeName.innerHTML = `
+            <div id="comment-div">
+            <p>
+          <br> Lärare: ${comment.stars.teachers}/5 Kursen: ${comment.stars.courses}/5<br/>  klasskamrater: ${comment.stars.students}/5 
+          
+          <br> ${comment.alias}, ${comment.date.year}/${comment.date.month}/${comment.date.day}:<br/>
+          <br>${comment.text}<br/> 
+        </p>
+        </div>
+            `;
+            allComment.appendChild(programmeName)
+        }
+     }
+}
+
+/*
+Du behöver bara hämta in det elementet du vill lägga till det i och sedan appenda in det i slutet av din if-sats! 
+
+elementet kan du hämta precis i början av funktionen så att datorn slipper göra det för varje gång du loopar! Alternativt i början av din if-sats
+*/
+/*
+function commentsOfCity(cityId) {
+    for(let programme of DB.COMMENTS_PROGRAMMES) {
+        if(programme.id == programmeId) {
+            let programmeName = document.getElementById("course");
+    let commentsName = DB.COMMENTS_CITY.find(comment => {
+        if (comment.cityID == cityId) {
+            return true;
+            
+        }
+    });
+}
+*/
 //funktion som lägger till information om programmet
 function renderInfoProgramme(programmeId){
     for( let programme of DB.PROGRAMMES){
@@ -49,4 +102,4 @@ function getUniversityById (programmeId) {
 //     for 
 // }
 
-renderProgrammeById(8);
+renderProgrammeById(1);
