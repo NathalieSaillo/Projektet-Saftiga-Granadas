@@ -1,3 +1,9 @@
+:root {
+    --main-color:rgb(74, 188, 193); 
+    --secondary-color:rgb(69, 39, 12);
+    --background-color: rgb(255, 253, 249);
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -83,7 +89,7 @@ body {
     font-weight: 900;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 50%);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 
 }
@@ -109,7 +115,7 @@ body {
 
 #subjects-header{
     font-size:xx-large;
-   color: rgb(34, 221, 221);
+    color: rgb(34, 221, 221);
     font-family: 'PT Sans', sans-serif;
     margin-left: 10vw;
     /* margin: 4vw 10vw 2vw; */
@@ -172,10 +178,6 @@ body {
 }
 
 
-.city-name {
-    font-size: 40px;
-}
-
 #info-wrapper{
     height: 300px;
     width: auto;
@@ -207,13 +209,12 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
 }
-p{
-    margin-top: 10px;
-    margin-left: 3vw;
-    color: rgb(25, 130, 135);
-    font-size: 18px;  
+p.city-name { 
+    color: rgb(60, 152, 157);  
     font-weight: 1000;
- 
+
+    text-align: center;
+    font-size: 40px;
 }
 
 .ta-chansen{
