@@ -113,6 +113,8 @@ body {
     margin-top: 10px;
 }
 
+.info-city
+
 #subjects-header{
     font-size:xx-large;
     color: rgb(34, 221, 221);
@@ -205,10 +207,9 @@ body {
 }
 
 #text{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
 }
+
 p.city-name { 
     color: rgb(60, 152, 157);  
     font-weight: 1000;
@@ -245,6 +246,36 @@ p.city-name {
     margin: 5px;
   
 } 
+
+#city-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    height: 20vw;
+    width: auto;
+
+    margin: 30px;
+}
+
+.city-image{
+    height: auto;
+    width: auto;
+}
+
+#annons-box{
+    border: solid dimgray 2px;
+    height: auto;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+    color: dimgray;
+    font-size: 4.5vh;
+}
 
 
 footer{

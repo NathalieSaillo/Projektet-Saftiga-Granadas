@@ -1,7 +1,7 @@
 :root {
     --main-color:rgb(74, 188, 193); 
     --secondary-color:rgb(69, 39, 12);
-    --background-color: rgb(255, 253, 249);
+    --background-color: rgb(235, 228, 214);
 }
 
 body {
@@ -15,12 +15,23 @@ body {
     margin: 0px;
 }
 
-h1 {
-    font-size: 50px;
-    margin: 30px;
+#title-text {
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     color: var(--main-color);
+    text-align: center;
 
     margin-top: 80px;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 3px;
+}
+
+#underrubrik{
+    font-size: 20px;
+    color: black;
+   
+    text-align: center;
 }
 
 .menu {
@@ -63,8 +74,6 @@ h1 {
     width: 300px;  */
     width: auto;
     height: auto;
-
-
 }
 
 #stader {
@@ -78,35 +87,39 @@ h1 {
     gap: 30px;
 }
 
-/* ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  } */
-
-h2 {
+.country-name {
     font-size: 30px;
     font-weight: 100;
+    
 }
 
 .stad-box {
-    height: 255px;
-    width: 340px;
+    height: 400px;
+    width: 600px;
     border: solid black 2px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
 }
 
-p {
-    text-align: center;
-    margin-top: 210px;
+.stad-namn-box {
+    margin-top: 320px;
+    width: 200px;
+    height: fit-content;
     border: solid white 2px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.stad-namn {
+    margin: 5px;
+    text-align: center;
     font-size: 25px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px var(--background-color);
 }
 
 footer{

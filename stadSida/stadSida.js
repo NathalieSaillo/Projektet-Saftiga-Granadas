@@ -30,6 +30,18 @@ function renderProgrammeNamesByCityId (cityId) {
     return programmeNames.join("");
 } 
 
+function renderProgrammeDiv (cityId) {
+    let programmeDiv = document.createElement("div");
+    let programmeBox = document.getElementById("programme-box");
+    programmeBox.appendChild(programmeDiv);
+
+    for (let programme of DB.PROGRAMMES) {
+        programmeDiv.innerHTML = `
+        <p>${renderProgrammeNamesByCityId(cityId)}</p>
+        `;
+    }
+}
+
 // function showProgrammes(){
 
 // }
@@ -87,25 +99,30 @@ function studyInCity (cityId){
         let sumSunDays = document.getElementById("text");
         sumSunDays.innerHTML=` 
         <p class="ta-chansen">Ta chansen att studera i ${city.name}</p>
-       <p> Tidigare Studenter</p>
+   
        <p>${city.text}</p>
-        <div class="review-city" id="comments-box">${commentsOfCity(savedCityId).text}</div>
-        
+            <div id= "city-images">
+                <div id = "annons-box"> Annons </div> 
+                <img src = "../databasen/Images/${city.imagesNormal[0]}" class="city-image"/>
+                <img src = "../databasen/Images/${city.imagesNormal[1]}" class="city-image"/>
+            </div>
         `;
+        }
     }
 }
-}
 
 
-function commentsOfCity(cityId) {
-    let commentsName = COMMENTS_CITY.find(comment => {
-        if (comment.cityID == cityId) {
-            return true;
+// function commentsOfCity(cityId) {
+//     let commentsName = COMMENTS_CITY.find(comment => {
+//         if (comment.cityID == cityId) {
+//             return true;
+//         } else {
             
-        }
-    });
-     return {text: "Finns inga kommentarer"};
-}
+//         }
+//     });
+//      return {text: "Finns inga kommentarer"};
+// }
+// <div class="review-city" id="comments-box">${commentsOfCity(savedCityId).text}</div>
 
 
 renderCityById(savedCityId);

@@ -25,7 +25,7 @@ function renderCountry (id) {
     let div = document.createElement("div");
      div.id = "land-box";
      div.innerHTML = `
-        <h2>${renderCountryName(id)}</h2>
+        <h1 class="country-name">${renderCountryName(id)}</h1>
         <div id="stader">
             ${renderCityInCountry(id)}
         </div>
@@ -63,7 +63,7 @@ function renderCityInCountry (countryId) {
                 if (city.countryID == country.id) {
                     let cityDiv = `
                     <div class="stad-box" style="background-image:url(../databasen/Images/${city.imagesNormal[0]}"  onClick="cityClick(${city.id})">
-                        <div id="hej"><p>${city.name}</p> </div>
+                        <div class="stad-namn-box"><p class="stad-namn">${city.name}</p> </div>
                     </div>
                     `;
                     cityArray.push(cityDiv);
@@ -75,31 +75,6 @@ function renderCityInCountry (countryId) {
     return cityArray.join("");
 }
 
-// function cityImagee (countryId) {
-//     for ( let country of DB.COUNTRIES ) {
-//         if (countryId == country.id ) {
-//             for ( let city of DB.CITIES) {
-//                 if (city.countryID == country.id) {
-//                     let cityImage = document.getElementById("hej");
-//                     cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesNormal[0]})`;
-
-                  
-//                 }
-//             } 
-//         }
-//     }
-// }
-
-
-// function citiesImages(city){
-//     for (let city of DB.CITIES){
-//         // if(city.id == ){
-
-//         let cityImages = document.getElementByClassName("stad-box");
-//         cityImages.style.backgroundImage =`url(../databasen/Images/${city.imagesNormal[0]})`; 
-
-//         }
-//     }
 // saves a personal storage for the user that uses the site, it makes it possible to show the right city after click
 function cityClick (cityId){
 window.sessionStorage.setItem("stad", cityId);
