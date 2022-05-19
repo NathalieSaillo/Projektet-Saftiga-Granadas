@@ -1,5 +1,6 @@
 "use strict";
 
+// GLOBAL VARIABLE
 let savedCityId = window.sessionStorage.getItem("stad");
 
 // HEADER FUNKTIONER
@@ -105,7 +106,7 @@ function getProgrammesByCityId (cityId) {
 // funktion för att rendera en div med namn på program och universitet
 function renderProgrammeDivByCityId (cityId) {
     let programmes = getProgrammesByCityId(cityId)
-
+    
     for (let programme of programmes) {
         let programmeInfo = document.createElement("p");
         programmeInfo.classList.add("programme-info");
@@ -125,6 +126,7 @@ function getUniversityNameByCityId (cityId) {
         if (university.cityID == cityId) {
             for (let programme of DB.PROGRAMMES) {
                 if (programme.universityID == university.id) {
+                    console.log(university.name);
                     return university.name;
                 }
             }
