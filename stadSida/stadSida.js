@@ -42,6 +42,7 @@ function renderProgrammeDiv (cityId) {
     }
 }
 
+
 // function showProgrammes(){
 
 // }
@@ -130,6 +131,7 @@ getSunDays(savedCityId);
 cityImage(savedCityId);
 studyInCity(savedCityId)
 
+renderProgrammeDiv (savedCityId);
 
 
 // funktion som visar bakgrundsbild bakom cityName.
