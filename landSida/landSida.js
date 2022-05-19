@@ -1,5 +1,5 @@
 "use strict";
-
+// sorts cities in alphabetical order
 DB.CITIES.sort(function(a, b) {
     if (a.name > b.name) {
     return 1;
@@ -9,7 +9,7 @@ DB.CITIES.sort(function(a, b) {
       }
     return 0;
       });
-
+// sorts countries in alphabetical order
       DB.COUNTRIES.sort(function(a, b) {
         if (a.name > b.name) {
         return 1;
