@@ -62,7 +62,7 @@ function renderCityInCountry (countryId) {
             for ( let city of DB.CITIES) {
                 if (city.countryID == country.id) {
                     let cityDiv = `
-                    <div class="stad-box"  onClick="cityClick(${city.id})">
+                    <div class="stad-box" style="background-image:url(../databasen/Images/${city.imagesNormal[0]}"  onClick="cityClick(${city.id})">
                         <div id="hej"><p>${city.name}</p> </div>
                     </div>
                     `;
@@ -75,31 +75,31 @@ function renderCityInCountry (countryId) {
     return cityArray.join("");
 }
 
-function cityImagee (countryId) {
-    for ( let country of DB.COUNTRIES ) {
-        if (countryId == country.id ) {
-            for ( let city of DB.CITIES) {
-                if (city.countryID == country.id) {
-                    let cityImage = document.getElementById("hej");
-             cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesNormal[0]})`;
+// function cityImagee (countryId) {
+//     for ( let country of DB.COUNTRIES ) {
+//         if (countryId == country.id ) {
+//             for ( let city of DB.CITIES) {
+//                 if (city.countryID == country.id) {
+//                     let cityImage = document.getElementById("hej");
+//                     cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesNormal[0]})`;
 
                   
-                }
-            } 
-        }
-    }
-}
+//                 }
+//             } 
+//         }
+//     }
+// }
 
 
-function citiesImages(cityArray){
-    for (let city of cityArray){
-        if(city.id == cityArray.id){
+// function citiesImages(city){
+//     for (let city of DB.CITIES){
+//         // if(city.id == ){
 
-            let cityImages = document.getElementByClassName("stad-box");
-            cityImages.style.backgroundImage =`url(../databasen/Images/${city.imagesNormal[0]})`; 
-        }
-    }
-}
+//         let cityImages = document.getElementByClassName("stad-box");
+//         cityImages.style.backgroundImage =`url(../databasen/Images/${city.imagesNormal[0]})`; 
+
+//         }
+//     }
 // saves a personal storage for the user that uses the site, it makes it possible to show the right city after click
 function cityClick (cityId){
 window.sessionStorage.setItem("stad", cityId);
@@ -111,4 +111,5 @@ window.location.href = "../stadsida/stadSida.html";
 //funktion som visar bilder bakom länder
 
 renderCountries(DB.COUNTRIES);
+// citiesImages(city);
 

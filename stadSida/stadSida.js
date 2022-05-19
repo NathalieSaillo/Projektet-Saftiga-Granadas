@@ -75,7 +75,7 @@ let savedCityId = window.sessionStorage.getItem("stad");
             let sumSunDays = document.getElementById("sun");
             sumSunDays.classList.add("content");
             sumSunDays.innerHTML=` 
-           antal soldagar: ${city.sun}
+           Antal soldagar: ${city.sun} ☀️
             `;
         }
     }
@@ -84,7 +84,6 @@ let savedCityId = window.sessionStorage.getItem("stad");
 function studyInCity (cityId){
     for( let city of DB.CITIES){
         if(city.id == cityId){
-
         let sumSunDays = document.getElementById("text");
         sumSunDays.innerHTML=` 
         <p class="ta-chansen">Ta chansen att studera i ${city.name}</p>
@@ -105,12 +104,12 @@ function commentsOfCity(cityId) {
             
         }
     });
-     return commentsName;
+     return {text: "Finns inga kommentarer"};
 }
 
 
- renderCityById(savedCityId);
- getSunDays(savedCityId);
+renderCityById(savedCityId);
+getSunDays(savedCityId);
 cityImage(savedCityId);
 studyInCity(savedCityId)
 
