@@ -53,20 +53,16 @@ h1.om-oss-header{
     text-shadow: 2px 2px rgb(69, 39, 12);
 }
 
-/* .container-pictures{
-    display: flex;
+.container-pictures{
+    display: grid;
     gap: 30px;
     grid-template-columns: repeat(1, 20vw 1fr);
-    grid-template-rows: repeat(3, 1fr);
-} */
+    grid-template-rows: repeat(5, 1fr);
+}
 
-.wrapper{
+#wrapper{
     background-color: rgb(201, 234, 234);
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
-    
+
 
 }
 /* .om-oss-general{
@@ -125,8 +121,7 @@ h1.om-oss-header{
 
 .om-oss-info-1, .om-oss-info-2, .om-oss-info-3{
     background-color: rgb(201, 234, 234);
-    display: grid;
-    gap: 10px;
+
     font-family: 'PT sans', sans-serif;
     padding: 20px;
     
