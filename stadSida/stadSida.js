@@ -108,6 +108,8 @@ function renderProgrammeDivByCityId (cityId) {
     let programmes = getProgrammesByCityId(cityId)
     
     for (let programme of programmes) {
+        for (let university of DB.UNIVERSITIES) {
+            if(university.id == programme.universityID) {
         let programmeInfo = document.createElement("div");
         programmeInfo.classList.add("programme-info");
         
@@ -115,9 +117,11 @@ function renderProgrammeDivByCityId (cityId) {
         programmeBox.appendChild(programmeInfo);
 
         programmeInfo.innerHTML = `
-        <p class=programme-text onClick="programmeClick(${programme.id})">${programme.name}, ${getUniversityNameByCityId(cityId)}</p>
+        <p class=programme-text onClick="programmeClick(${programme.id})">${programme.name}, ${university.name}</p>
         `;
     }
+    }
+}
 }
 
 // saves a personal storage for the user that uses the site, it makes it possible to show the right programme after click
@@ -127,18 +131,9 @@ function programmeClick (programmeId){
 }
 
 // funktion för att hämta universitetets namn
-function getUniversityNameByCityId (cityId) {
-    for (let university of DB.UNIVERSITIES) {
-        if (university.cityID == cityId) {
-            for (let programme of DB.PROGRAMMES) {
-                if (programme.universityID == university.id) {
-                    console.log(university.name);
-                    return university.name;
-                }
-            }
-        }
-    }
-}
+
+
+
 
 
 // initialize the webpage
