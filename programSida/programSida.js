@@ -29,7 +29,7 @@ function renderInfoAboutProgramme(programmeId){
            <p>Universitet: <br>${renderUniversity (programmeId)}</p>
            <p>Ämne: <br>${renderField(programmeId)}</p>
            <p>Språk: <br>${renderLanguage(programmeId)}</p>
-           <p>Nivå: <br>${renderLevel(programmeId)}</p>
+           <p>Nivå: <br>${getLevel(programme.level)}</p>
            <p>Utbytesstudenter: <br>${programme.exchangeStudents}</p>
            <p>Lokala studenter: <br>${programme.localStudents}</p>
            `;
@@ -37,6 +37,11 @@ function renderInfoAboutProgramme(programmeId){
         
     }
 }
+
+
+function getLevel (id) {   return DB.LEVELS[id] }
+                
+        
 
 function renderLanguage(programmeId){
     for (let programme of DB.PROGRAMMES) {
@@ -74,17 +79,7 @@ function renderUniversity (programmeId){
     }
 }
 
-function renderLevel(programmeId){
-    for (let programme of DB.PROGRAMMES) {
-        if(programmeId == programme.id) {
-            for (let level of DB.LEVELS) {
-                if(level== programme.level){
-                    return level[programme.level];
-                }
-            }
-        }
-    }
-}
+
 
 function renderComments (programmeId){
     for (let comment of DB.COMMENTS_PROGRAMME) {

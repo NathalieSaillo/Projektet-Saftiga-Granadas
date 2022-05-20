@@ -253,18 +253,7 @@ height: 30px;
 background-color: rgba(0, 0, 0, 0.3);
 }
 
-#sunshine{
-    -webkit-animation: rotation 4s  linear;
-    animation-iteration-count: infinite
-}
-@-webkit-keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(180deg);
-    }
-}
+
 /* bort?
 #subjects-header{
     font-size:xx-large;
@@ -396,3 +385,5 @@ footer{
 .footer:hover{
     color: rgba(32, 186, 197, 0.8);
 }
+
+#sunshine{ -webkit-animation: rotation 4s linear; animation-iteration-count: infinite } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(180deg); } }
