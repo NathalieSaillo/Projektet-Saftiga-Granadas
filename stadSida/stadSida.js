@@ -46,7 +46,7 @@ function getSunDays(cityId){
             let sumSunDays = document.getElementById("sun");
             sumSunDays.classList.add("content");
             sumSunDays.innerHTML=` 
-            Antal soldagar: ${city.sun} ☀️
+            Antal soldagar: ${city.sun} <div id="sunshine">☀️</div>
             `;
         }
     }
