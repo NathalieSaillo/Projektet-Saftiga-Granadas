@@ -19,7 +19,7 @@ function cityImage(cityId){
     for( let city of DB.CITIES){
         if(city.id == cityId){
             let cityImage = document.getElementById("wrapper");
-            cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesBig[0]})`;
+            cityImage.style.backgroundImage=`url(../databasen/Images/${city.imagesBig[0].split(" ").join("_")})`;
         }
     }
 }
@@ -65,8 +65,8 @@ function studyInCity (cityId){
 
             <div id= "city-images">
                 <div id = "annons-box">ANNONS</div> 
-                <img src = "../databasen/Images/${city.imagesNormal[0]}" class="city-image"/>
-                <img src = "../databasen/Images/${city.imagesNormal[1]}" class="city-image"/>
+                <img src = "../databasen/Images/${city.imagesNormal[0].split(" ").join("_")}" class="city-image"/>
+                <img src = "../databasen/Images/${city.imagesNormal[1].split(" ").join("_")}" class="city-image"/>
             </div>
         `;
         }
