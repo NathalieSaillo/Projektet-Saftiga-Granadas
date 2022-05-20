@@ -108,12 +108,10 @@ body {
 .stad-box {
     height: 300px;
     width: 500px;
-    border: solid black 2px;
-
+    border: solid rgb(69, 39, 12) 2px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     justify-content: center;
 }
