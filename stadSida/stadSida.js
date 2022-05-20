@@ -108,16 +108,22 @@ function renderProgrammeDivByCityId (cityId) {
     let programmes = getProgrammesByCityId(cityId)
     
     for (let programme of programmes) {
-        let programmeInfo = document.createElement("p");
+        let programmeInfo = document.createElement("div");
         programmeInfo.classList.add("programme-info");
         
         let programmeBox = document.getElementById("programme-box");
         programmeBox.appendChild(programmeInfo);
 
         programmeInfo.innerHTML = `
-        ${programme.name}, ${getUniversityNameByCityId(cityId)}
+        <p class=programme-text onClick="programmeClick(${programme.id})">${programme.name}, ${getUniversityNameByCityId(cityId)}</p>
         `;
     }
+}
+
+// saves a personal storage for the user that uses the site, it makes it possible to show the right programme after click
+function programmeClick (programmeId){
+    window.sessionStorage.setItem("programme-info", programmeId);
+    window.location.href = "../programSida/programSida.html";
 }
 
 // funktion för att hämta universitetets namn
