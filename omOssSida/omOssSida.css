@@ -1,128 +1,68 @@
-:root {
-    --main-color:rgb(74, 188, 193); 
-    --secondary-color:rgb(69, 39, 12);
-    --background-color: rgb(235, 228, 214);
+*{
+    margin: 0;
 }
-
-
-
-body {
-    background-color: var(--background-color);
-   margin: 0px;
-}
-
-.menu {
-    background-color: rgba(255, 253, 249, 0.5);
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 100%;
-    height: 63px;
-    font-family: 'PT sans', sans-serif;
-}
-
-.menu a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    flex-grow: 1;
-}
-
-.menu a:hover {
-    background-color: rgba(74, 188, 193, 0.5);
-    color: white;
-}
-
-.menu a.active {
-    background-color: var(--main-color);
-    color: white;
-}
-
-
-h1.om-oss-header{
-    font-family: 'Shrikhand', cursive;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
-    margin-top: 100px;
-    color: rgb(74, 188, 193);
-    text-shadow: 2px 2px rgb(69, 39, 12);
-}
-
 .container-pictures{
     display: grid;
     gap: 30px;
+    margin: 20px;
     grid-template-columns: repeat(1, 20vw 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
 
-#wrapper{
-    background-color: rgb(201, 234, 234);
-
-
+.om-oss-header{
+display: flex;
+justify-content: center;
+font-size: 8vh;
 }
-/* .om-oss-general{
+
+.om-oss-general{
     background-color: rgb(201, 234, 234);
-} */
-/* .om-oss-kvadrat-annons {
+}
+.om-oss-kvadrat-annons {
     display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 20vw;
+    width: 16vw;
+    height: 20vh;
     background-color: darkgrey;
-} */
-/* #picture-wrapper{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-} */
-/* .om-oss{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(3, 1fr);
-} */
+}
 .om-oss-picture-1{
-    /* background-image: url(); */
-    background-color: beige;
-    width: 300px;
-    height: 300px;
+    background-image: url(../bilder/havet.jpg);
+    width: 20vh;
+    height: 20vh;
     background-size: contain;
     border-radius: 50%;
-    margin: 20px;
-    /* display: inline-block; */
 }
 
-
 .om-oss-picture-2 {
-    /* background-image: url(); */
-    background-color: beige;
-    width: 300px;
-    height: 300px;
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
     background-size: contain;
     border-radius: 50%;
-    margin: 20px;
-    /* display: inline-block; */
 }
 
 .om-oss-picture-3 {
-    background-image: url(../bilder/omoss-v.png);
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
     border-radius: 50%;
-    margin: 20px;
-    /* display: inline-block; */
 }
 
-.om-oss-info-1, .om-oss-info-2, .om-oss-info-3{
+.om-oss-picture-4 {
+    background-image: url(/images/240975339_4257887324299287_171575076457783838_n.jpg);
+    width: 20vh;
+    height: 20vh;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.om-oss-info-1, .om-oss-info-2, .om-oss-info-3, .om-oss-info-4 {
     background-color: rgb(201, 234, 234);
 
-    font-family: 'PT sans', sans-serif;
-    padding: 20px;
-    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
