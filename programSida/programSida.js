@@ -1,6 +1,7 @@
 "use strict"
 
-
+// GLOBAL VARIABLE
+let savedProgrammeId = window.sessionStorage.getItem("programme-info");
 
 //funktion som ska lägga till programmets namn i headern
 function renderProgrammeById(programmeId) {
@@ -26,65 +27,65 @@ function renderInfoAboutProgramme(programmeId){
        if(programme.id == programmeId) {
            let programmeName = document.getElementById("text-div");
            programmeName.innerHTML = `
-           <p>universitet: ${renderUniversity (programmeId)}</p>
-           <p>ämne: ${renderField(programmeId)}</p>
-           <p>språk: ${renderLanguage(programmeId)}</p>
-           <p>nivå: ${renderLevel(programmeId)}</p>
+           <p>Universitet: ${renderUniversity (programmeId)}</p>
+           <p>Ämne: ${renderField(programmeId)}</p>
+           <p>Språk: ${renderLanguage(programmeId)}</p>
+           <p>Nivå: ${renderLevel(programmeId)}</p>
+           <p>Utbytesstudenter: ${programme.exchangeStudents}</p>
+           <p>Lokala studenter: ${programme.localStudents}</p>
            `;
        }
         
     }
 }
 
-function renderLanguage(languageId){
+function renderLanguage(programmeId){
     for (let programme of DB.PROGRAMMES) {
-        if(programme.id == languageId) {
+        if(programmeId == programme.id) {
             for (let language of DB.LANGUAGES) {
-                if(language.id == languageId){
-                    return language.name
+                if(language.id == programme.language){
+                    return language.name;
                 }
             }
-}
+        }
     }
-}
+ }
 
-function renderField(fieldId){
+function renderField(programmeId){
     for (let programme of DB.PROGRAMMES) {
-        if(programme.id == fieldId) {
+        if(programmeId == programme.id) {
             for (let field of DB.FIELDS) {
-                if(field.id == fieldId){
-                    return field.name
+                if(field.id == programme.subjectID){
+                    return field.name;
                 }
             }
-}
+        }
     }
 }
 
-function renderUniversity (universityId){
+function renderUniversity (programmeId){
     for (let programme of DB.PROGRAMMES) {
-        if(programme.id == universityId) {
+        if(programmeId == programme.id) {
             for (let university of DB.UNIVERSITIES) {
-                if(university.id == universityId){
-                    return university.name
+                if(university.id == programme.universityID){
+                    return university.name;
                 }
             }
-}
+        }
     }
 }
 
-function renderLevel(languageId){
+function renderLevel(programmeId){
     for (let programme of DB.PROGRAMMES) {
-        if(programme.id == languageId) {
+        if(programmeId == programme.id) {
             for (let level of DB.LEVELS) {
-                if(level == languageId){
-                    return level
+                if(level== programme.level){
+                    return level[programme.level];
                 }
             }
-}
+        }
     }
 }
-
-renderInfoAboutProgramme(0)
 
 function renderComments (programmeId){
     for (let comment of DB.COMMENTS_PROGRAMME) {
@@ -134,9 +135,7 @@ function renderInfoProgramme(programmeId){
         containerDiv.appendChild(programmeInfoDiv);
 
         programmeInfoDiv.innerHTML = `
-        <p>${programme.exchangeStudents}</p>
         <p>${getUniversityById(programmeId)}</p>
-       
         `;
        return programmeInfoDiv;
     }
@@ -152,8 +151,6 @@ function getUniversityById (programmeId) {
     return universityName.name;
  }
 
-// function renderProgrammeNamesById(){
-//     for 
-// }
-
-renderProgrammeById(0);
+// INITIALIZE PAGE
+renderProgrammeById(savedProgrammeId);
+renderInfoAboutProgramme(savedProgrammeId);
