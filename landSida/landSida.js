@@ -62,7 +62,7 @@ function renderCityInCountry (countryId) {
             for ( let city of DB.CITIES) {
                 if (city.countryID == country.id) {
                     let cityDiv = `
-                    <div class="stad-box" style="background-image:url(../databasen/Images/${city.imagesNormal[0]}"  onClick="cityClick(${city.id})">
+                    <div class="stad-box" style="background-image:url(../databasen/Images/${city.imagesNormal[0].split(" ").join("_")}"  onClick="cityClick(${city.id})">
                         <div class="stad-namn-box"><p class="stad-namn">${city.name}</p> </div>
                     </div>
                     `;
