@@ -265,7 +265,7 @@ flex-direction: column;
     padding: 10px;
     margin: 0;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #comment-div p:nth-child(3n+2){
