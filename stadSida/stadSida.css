@@ -231,13 +231,15 @@ p.city-name {
 
 .programme-info {
     height: auto;
-    margin: 0;
     padding-left: 12px;
 }
 
 .programme-info:nth-child(2n) {
     background-color: gainsboro;
-    height: auto;
+}
+
+.programme-text {
+    margin: 0;
 }
 
 /* bort?
