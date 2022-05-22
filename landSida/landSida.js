@@ -8,17 +8,17 @@ DB.CITIES.sort(function(a, b) {
       return -1;
       }
     return 0;
-      });
+});
 // sorts countries in alphabetical order
-      DB.COUNTRIES.sort(function(a, b) {
-        if (a.name > b.name) {
-        return 1;
+DB.COUNTRIES.sort(function(a, b) {
+    if (a.name > b.name) {
+    return 1;
+    }
+    if (a.name < b.name) {
+        return -1;
         }
-        if (a.name < b.name) {
-          return -1;
-          }
-        return 0;
-          });
+    return 0;
+});
      
 // renders country and makes an internal HTML to render it on webside  
 function renderCountry (id) {
@@ -81,10 +81,5 @@ window.sessionStorage.setItem("stad", cityId);
 window.location.href = "../stadsida/stadSida.html";
 }
 
-
-
-//funktion som visar bilder bakom länder
-
 renderCountries(DB.COUNTRIES);
-// citiesImages(city);
 

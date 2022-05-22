@@ -3,6 +3,7 @@
 // GLOBAL VARIABLE
 let savedProgrammeId = window.sessionStorage.getItem("programme-info");
 
+// FUNKTIONER FÖR ATT RENDERA PROGRAMMETS NAMN OCH INFO
 //funktion som ska lägga till programmets namn i headern
 function renderProgrammeById(programmeId) {
     for(let programme of DB.PROGRAMMES) {
@@ -12,15 +13,11 @@ function renderProgrammeById(programmeId) {
             programmeName.innerHTML = `
             <p class ="course-name">${programme.name}</p>
             `;
-
-            // // console.log(`${programme.name}`);
-            // let programmeImage = document.getElementById("wrapper");
-            //vi måste lägga in bilderna i databasen! 
-            // programmeImage.style.backgroundImage =url(/bilder/design.webp);
         }
     }
 }
 
+// funktion för att rendera information om programmet
 function renderInfoAboutProgramme(programmeId){
     for (let programme of DB.PROGRAMMES) {
        if(programme.id == programmeId) {
@@ -39,10 +36,13 @@ function renderInfoAboutProgramme(programmeId){
 }
 
 
-function getLevel (id) {   return DB.LEVELS[id] }
-                
-        
-
+//FUNKTIONER FÖR ATT HÄMTA UT INFORMATION OM PROGRAMMET
+// funktion för att hämta nivån av programmet från databasen
+function getLevel (id) {   
+    return DB.LEVELS[id] 
+}
+                 
+// funktion för att hämta språket på programmet från databasen
 function renderLanguage(programmeId){
     for (let programme of DB.PROGRAMMES) {
         if(programmeId == programme.id) {
@@ -55,6 +55,7 @@ function renderLanguage(programmeId){
     }
  }
 
+ // funktion för att hämta ämnet på programmet från databasen
 function renderField(programmeId){
     for (let programme of DB.PROGRAMMES) {
         if(programmeId == programme.id) {
@@ -67,6 +68,7 @@ function renderField(programmeId){
     }
 }
 
+// funktion för att hämta universitetets namn där programmet är från databasen
 function renderUniversity (programmeId){
     for (let programme of DB.PROGRAMMES) {
         if(programmeId == programme.id) {
@@ -79,8 +81,7 @@ function renderUniversity (programmeId){
     }
 }
 
-
-
+//FUNKTION FÖR ATT RENDERA KOMMENTARER PÅ PROGRAMMET
 function renderComments (programmeId){
     for (let comment of DB.COMMENTS_PROGRAMME) {
         let allComment = document.getElementById("comment-wrapper")
@@ -98,32 +99,6 @@ function renderComments (programmeId){
         }
      }
 }
-
-//funktion som lägger till information om programmet
-function renderInfoProgramme(programmeId){
-    for( let programme of DB.PROGRAMMES){
-        let programmeInfoDiv = document.createElement("div");
-        programmeInfoDiv.id = "programme-info";
-        
-        let containerDiv = document.getElementById("container");
-        containerDiv.appendChild(programmeInfoDiv);
-
-        programmeInfoDiv.innerHTML = `
-        <p>${getUniversityById(programmeId)}</p>
-        `;
-       return programmeInfoDiv;
-    }
-    
-}
-
-function getUniversityById (programmeId) {
-    let universityName = UNIVERSITIES.find(university => {
-        if (university.id == PROGRAMMES.programmeId.universityID) {
-            return true;
-        }
-    });
-    return universityName.name;
- }
 
 // INITIALIZE PAGE
 renderProgrammeById(savedProgrammeId);
