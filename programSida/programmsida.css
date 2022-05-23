@@ -13,6 +13,7 @@ body{
   background-color: var(--background-color)
 }
 
+/* MENU STYLE */
 .menu {
   background-color: rgba(255, 253, 249, 0.5);
   overflow: hidden;
@@ -52,8 +53,9 @@ img{
 
 }
 
-
+/* HEADER STYLE */
 #header{
+
   background-image: url(../bilder/medicin.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,6 +63,15 @@ img{
   width: 100vw;
   display: flex;
   justify-content: center;
+
+    background-image: url(../bilder/plugga.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
 }  
 
 #wrapper{
@@ -78,6 +89,7 @@ img{
 
 
 .content{
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,17 +100,37 @@ img{
 }
 
 div#course.content{
-  border: white solid 1px;
-  width: auto;
-  height: 60px;
-  padding: 5px;
-  font-size: 4.2vh;
-  font-weight: 900;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 50%);
-  box-shadow: 0px 0px 5px rgbargb(69, 39, 12, 0.4);
-  color: rgb(25, 130, 135);
+    border: white solid 1px;
+    width: auto;
+    height: 60px;
+    padding: 5px;
+    font-size: 4.2vh;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    box-shadow: 0px 0px 5px rgbargb(69, 39, 12, 0.4);
+    color: rgb(25, 130, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 900;
+}
+
+div#course.content{
+    border: white solid 1px;
+    width: auto;
+    height: 60px;
+    padding: 5px;
+    font-size: 4.2vh;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 5px rgbargb(69, 39, 12, 0.4);
+    color: rgb(25, 130, 135);
 }
 
 #content{
@@ -129,6 +161,7 @@ div#course.content{
   height: auto;
   width: auto;
 }
+
 
 /* 
 .picture-div{
@@ -263,12 +296,16 @@ flex-direction: column;
   padding: 10px;
   margin: 0;
 
+
   overflow-y: scroll;
+  overflow-y: auto;
+
 }
 
 #comment-div p:nth-child(3n+2){
   background-color:rgba(74, 188, 193, 20%)
 }
+
 
 /* bort??
 .chevrone {

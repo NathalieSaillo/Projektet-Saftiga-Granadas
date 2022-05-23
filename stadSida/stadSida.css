@@ -114,30 +114,7 @@ p.city-name {
     font-size: 40px;
 }
 
-
-/* bort?
-#image-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vw;
-    width: 90vw;
-    margin-left: 10vh;
-    margin-bottom: 1;
-    margin-right: 5px;
-}  
-
-.box-image{ 
-    height: 20vw;
-    width: 25vw; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gainsboro;
-    margin: 5px;
-  
-} 
-*/
+#sunshine{ -webkit-animation: rotation 4s linear; animation-iteration-count: infinite } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(180deg); } }
 
 /* INFO BOX STYLE */
 .ta-chansen{
@@ -190,11 +167,6 @@ p.city-name {
     color: dimgray;
     font-size: 4.5vh;
 }
-
-/* bort?
- #image {
-    display: flex;
-} */
 
 /* PROGRAMME BOX STYLE */
 #programme-wrapper {
@@ -251,105 +223,9 @@ p.city-name {
 .programme-info:hover {
 height: 30px;
 background-color: rgba(0, 0, 0, 0.3);
+cursor: pointer;
 }
 
-
-/* bort?
-#subjects-header{
-    font-size:xx-large;
-    color: rgb(34, 221, 221);
-    font-family: 'PT Sans', sans-serif;
-    margin-left: 10vw;
-    margin: 4vw 10vw 2vw;
-    margin-top: 10vw;
-}
-
-#subject-header{
-    height: 5vh;
-    width: 80vw;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    gap: 1vw;
-}
-
-.subject{
-    height: 5vh;
-    width: 12vw;
-    border: black solid 1px;
-    font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: large;
-   padding: 15px 0 0px;
-   
-}
-
-.subject:hover{
-    background-color: rgb(69, 39, 12);
-    color: white;
-    cursor: pointer;
-}
-
-.subject:active{
-    background-color: rgba(32, 186, 197, 0.4);
-    color: black;    
-    border: 1px rgba(32, 186, 197, 0.4) solid;  
-}
-
-#open-subject{
-    margin: auto;
-    margin-top: 40px;
-    justify-content: center;
-    height: 50vh;
-    width: 80vw;
-    border: black solid 1px;
-    overflow: scroll;
-    margin-bottom: 5vh;
-
-}
-
-.line{
-    background-color: rgba(211, 211, 211, 0.792);
-    height: 35px;
-}
-
-.line:nth-child(even){
-    background-color: rgb(255, 253, 249);
-} */
-
-
-/* bort?
-#info-wrapper{
-    height: 300px;
-    width: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    gap: 5vw;
-    display: flex;
-    justify-content: center;
-}
-
-.info-city{
-    height: 400px;
-    background-color: whitesmoke;
-    width: 35vw;
-    display: flex;
-    align-items: center;
-}
-
-.review-city{
-    height: 400px;
-    background-color: whitesmoke;
-    width: 35vw;
-    display: flex;
-    align-items: center;
-} */
-
-/* #text{
-    margin: 30px;
-} */
 #annons-ett{
     display: flex;
     justify-content: center;
@@ -385,5 +261,3 @@ footer{
 .footer:hover{
     color: rgba(32, 186, 197, 0.8);
 }
-
-#sunshine{ -webkit-animation: rotation 4s linear; animation-iteration-count: infinite } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(180deg); } }
