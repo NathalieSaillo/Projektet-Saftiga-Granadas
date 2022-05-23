@@ -1,53 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="omOssSida.css" />
-</head>
-<body>
-  <h1 class="om-oss-header">Om oss</h1>
-    <div class="container-pictures">
-    <div class="om-oss-kvadrat-annons">annons</div>
-    <div class="om-oss-general"></div>
-  <div class="om-oss-picture-1"></div>
-  <div class="om-oss-info-1">
-    <p>Namn: Damian Milczarek</p>
-    <p>Ålder: 22</p>
-    <p>Bor: Malmö</p>
-    <p>Uppväxt: Krakow, Polen</p>
-    <p>Intressen: Gaming, Böcker, Dreja </p>
-    <p>Annat: </p>
-  </div>
-  <div class="om-oss-picture-2"></div>
-  <div class="om-oss-info-2">
-    <p>  Namn: Evelyn Pålsson</p>
-      <p>Ålder: 23</p>
-        <p>Bor: Malmö</p>
-          <p>Uppväxt: Norra Rörum</p>
-            <p>Intressen: Böcker, Shopping, Bada</p>
-              <p>Annat: Självlärd amatör-frisör</p>
-  </div>
-  <div class="om-oss-picture-3"></div>
-  <div class="om-oss-info-3">
-    <p>Namn: Nathalie Saillo</p>
-      <p>Ålder: 20</p>
-        <p>Bor: Malmö</p>
-          <p>Uppväxt: Malmö</p>
-            <p>Intressen: Surfa, Böcker, Resa, Dansa</p>
-              <p>Annat: Ser alltid fram emot att lära mig nya saker</p>
-  </div>
-  <div class="om-oss-picture-4"></div>
-  <div class="om-oss-info-4">
-    <p> Namn: Veronica Liljegren</p>
-      <p>Ålder: 23</p>
-        <p>Bor: Malmö</p>
-          <p>Uppväxt: Linköping</p>
-            <p>Intressen: Måla, Baka, Resa, Sjunga </p>
-              <p>Annat: </p>
-  </div>
-    </div>
-</body>
-</html>
+:root {
+  --main-color:rgb(74, 188, 193); 
+  --secondary-color:rgb(69, 39, 12);
+  --background-color: rgb(235, 228, 214);
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  background-color: var(--background-color)
+}
+
+.menu {
+  background-color: rgba(255, 253, 249, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 63px;
+}
+
+.menu a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.menu a:hover {
+  background-color: rgba(74, 188, 193, 0.5);
+  color: white;
+}
+
+.menu a.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+img{
+  width: 35px;
+  height: 35px;
+}
+
+#image {
+  display: flex;
+
+}
+
+
+#header{
+  background-image: url(../bilder/medicin.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}  
+
+#wrapper{
+  padding-top: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 900;
+  color: rgb(25, 130, 135);
+}
+
+div#course.content{
+  border: white solid 1px;
+  width: auto;
+  height: 60px;
+  padding: 5px;
+  font-size: 4.2vh;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 50%);
+  box-shadow: 0px 0px 5px rgbargb(69, 39, 12, 0.4);
+  color: rgb(25, 130, 135);
+}
+
+#content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 5.2vh;
+  font-weight: 900;
+}
+
+#annons-ett{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 20vh;
+  width: 97vw;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#container {
+  height: auto;
+  width: auto;
+}
+
+#programme-info {
+  height: auto;
+  width: auto;
+}
+
+/* 
+.picture-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 100%;
+  background-image: url(/images/program-sida-design.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.container-program{ 
+width: 90%;
+color: whitesmoke;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.program-name{
+  min-width: 30vw;
+  min-height: 9vh;
+  font-size: larger;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: underline;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 20%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+
+
+.text-div p{
+  color: rgb(25, 130, 135);
+}*/
+
+/* INFO PROGRAMME STYLE */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 30px;
+}
+
+#info-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+
+  min-width: 30vw;
+  max-width: 80vw;
+  min-height: 9vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  text-align: center;
+  font-size: large;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 20%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  grid-column-gap: 50px;
+  color: rgb(25, 130, 135);
+}
+
+#comment-container {
+  margin: 30px;
+  display: flex;
+  height: auto;
+  width: auto;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline{
+  padding: 0vh 0.5vh 0vh 0.5vh;
+  width: 100%;
+
+  text-align: center;
+  color: var(--secondary-color);
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 2px;
+  border: 3px solid rgb(245, 239, 239);
+}
+
+#annons-box{
+  width: 30vw;
+  height: 30vh;
+  border: solid dimgray 2px;
+  background-color: gray;
+  color: dimgray;
+  text-align: center;
+  font-size: 4.5vh;
+}
+
+#comment-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+
+  justify-items: center;
+  align-items: center;
+}
+
+#comment-div p:hover{
+  background-color:rgba(80, 200, 200, 100%);
+  transition: 0.5s;
+}
+
+#comment-div p:hover:nth-child(3n+2){
+  background-color:rgba(80, 195, 200, 30%)
+}
+#comment-div p{
+  display: flex;
+  align-items: center;
+  background-color: rgba(74, 188, 193, 100%);
+  width: 30vw;
+  height: 30vh;
+
+  padding: 10px;
+  margin: 0;
+
+  overflow-y: scroll;
+}
+
+#comment-div p:nth-child(3n+2){
+  background-color:rgba(74, 188, 193, 20%)
+}
+
+/* bort??
+.chevrone {
+  border-style: solid;
+border-width: 0.25em 0.25em 0 0;
+content: '';
+display: inline-block;
+height: 0.45em;
+left: 0.15em;
+position: relative;
+top: 0.15em;
+transform: rotate(135deg);
+vertical-align: top;
+width: 0.45em;
+} */
+
+#annons-ett{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 20vh;
+  width: 97vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  background-color: gray;
+  border: solid dimgray 2px;
+  color: dimgray;
+  font-size: 4.5vh;
+}
+
+footer{
+  background-color: rgb(69, 39, 12);
+  height: 100px;
+  width: 100%;
+  padding-top: 1vh;
+}
+
+.footer{
+  color: white;
+  text-align: right;
+  padding-right: 10vw;
+  font-size: large;
+  
+}
+
+.footer:hover{
+  color: rgba(32, 186, 197, 0.8);
+}
