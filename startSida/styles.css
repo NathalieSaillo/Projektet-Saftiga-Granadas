@@ -231,6 +231,23 @@ img{
   text-decoration: none;
 }
 
+#annons-ett{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 20vh;
+  width: 97vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  background-color: gray;
+  border: solid dimgray 2px;
+  color: dimgray;
+  font-size: 4.5vh;
+}
+
 /* FOOTER STYLE */
 footer{
   background-color: rgb(69, 39, 12);

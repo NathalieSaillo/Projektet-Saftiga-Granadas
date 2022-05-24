@@ -15,12 +15,29 @@ body {
     margin: 0px;
 }
 
+#annons-ett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20vh;
+    width: 97vw;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+    background-color: gray;
+    border: solid dimgray 2px;
+    color: dimgray;
+    font-size: 4.5vh;
+}
+
 #title-text {
     font-size: 90px;
     margin-bottom: 10px;
     color: var(--main-color);
     text-align: center;
-    margin-top: 120px;
+    margin-top: 60px;
     font-family: 'Shrikhand', cursive;
     letter-spacing: 3px;
     text-shadow: 2px 2px rgb(69, 39, 12);
