@@ -78,7 +78,7 @@ function renderCityInCountry (countryId) {
 // saves a personal storage for the user that uses the site, it makes it possible to show the right city after click
 function cityClick (cityId){
 window.sessionStorage.setItem("stad", cityId);
-window.location.href = "../stadsida/stadSida.html";
+window.location.href = "../stadSida/stadSida.html";
 }
 
 renderCountries(DB.COUNTRIES);
